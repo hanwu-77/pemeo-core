@@ -1,0 +1,555 @@
+{
+  "scope": "Pinned Python runtime/test dependencies; not a full transitive native-library SBOM",
+  "source_distribution_bundles_dependency_code": false,
+  "packages": [
+    {
+      "name": "annotated-types",
+      "version": "0.8.0",
+      "declared_license": "MIT",
+      "evidence": "installed pinned distribution metadata and bundled license texts",
+      "license_texts": [
+        {
+          "path": "third_party/licenses/annotated-types/LICENSE",
+          "sha256": "fe1049884b1a0d9342901e88e07f32925d24b3121d9972b6a6805fb9824b095d"
+        }
+      ],
+      "requires_dist": []
+    },
+    {
+      "name": "attrs",
+      "version": "26.1.0",
+      "declared_license": "MIT",
+      "evidence": "installed pinned distribution metadata and bundled license texts",
+      "license_texts": [
+        {
+          "path": "third_party/licenses/attrs/LICENSE",
+          "sha256": "882115c95dfc2af1eeb6714f8ec6d5cbcabf667caff8729f42420da63f714e9f"
+        }
+      ],
+      "requires_dist": []
+    },
+    {
+      "name": "iniconfig",
+      "version": "2.3.0",
+      "declared_license": "MIT",
+      "evidence": "installed pinned distribution metadata and bundled license texts",
+      "license_texts": [
+        {
+          "path": "third_party/licenses/iniconfig/LICENSE",
+          "sha256": "3409fa91f7ace557894632676656e32264fe5ef7581535725dc9a23774551bd4"
+        }
+      ],
+      "requires_dist": []
+    },
+    {
+      "name": "jsonschema",
+      "version": "4.26.0",
+      "declared_license": "MIT",
+      "evidence": "installed pinned distribution metadata and bundled license texts",
+      "license_texts": [
+        {
+          "path": "third_party/licenses/jsonschema/COPYING",
+          "sha256": "4f92a015a13c4d1a040bef018aa13430b4f1bc73b41b16bb846c346766de7439"
+        }
+      ],
+      "requires_dist": [
+        "attrs>=22.2.0",
+        "jsonschema-specifications>=2023.03.6",
+        "referencing>=0.28.4",
+        "rpds-py>=0.25.0",
+        "fqdn; extra == 'format'",
+        "idna; extra == 'format'",
+        "isoduration; extra == 'format'",
+        "jsonpointer>1.13; extra == 'format'",
+        "rfc3339-validator; extra == 'format'",
+        "rfc3987; extra == 'format'",
+        "uri-template; extra == 'format'",
+        "webcolors>=1.11; extra == 'format'",
+        "fqdn; extra == 'format-nongpl'",
+        "idna; extra == 'format-nongpl'",
+        "isoduration; extra == 'format-nongpl'",
+        "jsonpointer>1.13; extra == 'format-nongpl'",
+        "rfc3339-validator; extra == 'format-nongpl'",
+        "rfc3986-validator>0.1.0; extra == 'format-nongpl'",
+        "rfc3987-syntax>=1.1.0; extra == 'format-nongpl'",
+        "uri-template; extra == 'format-nongpl'",
+        "webcolors>=24.6.0; extra == 'format-nongpl'"
+      ]
+    },
+    {
+      "name": "jsonschema-specifications",
+      "version": "2025.9.1",
+      "declared_license": "MIT",
+      "evidence": "installed pinned distribution metadata and bundled license texts",
+      "license_texts": [
+        {
+          "path": "third_party/licenses/jsonschema-specifications/COPYING",
+          "sha256": "42dcd63495f87b4eb7c7757afa379bb55a53f94afd7a5f657d9adf57236e515c"
+        }
+      ],
+      "requires_dist": [
+        "referencing>=0.31.0"
+      ]
+    },
+    {
+      "name": "packaging",
+      "version": "26.3",
+      "declared_license": "Apache-2.0 OR BSD-2-Clause",
+      "evidence": "installed pinned distribution metadata and bundled license texts",
+      "license_texts": [
+        {
+          "path": "third_party/licenses/packaging/LICENSE",
+          "sha256": "cad1ef5bd340d73e074ba614d26f7deaca5c7940c3d8c34852e65c4909686c48"
+        },
+        {
+          "path": "third_party/licenses/packaging/LICENSE.APACHE",
+          "sha256": "0d542e0c8804e39aa7f37eb00da5a762149dc682d7829451287e11b938e94594"
+        },
+        {
+          "path": "third_party/licenses/packaging/LICENSE.BSD",
+          "sha256": "b70e7e9b742f1cc6f948b34c16aa39ffece94196364bc88ff0d2180f0028fac5"
+        }
+      ],
+      "requires_dist": []
+    },
+    {
+      "name": "pluggy",
+      "version": "1.6.0",
+      "declared_license": "MIT",
+      "evidence": "installed pinned distribution metadata and bundled license texts",
+      "license_texts": [
+        {
+          "path": "third_party/licenses/pluggy/LICENSE",
+          "sha256": "d6b65e6c213a5d0b577911d34d6e5949b9f59d76c238c5071a2f3fc16cfb2606"
+        }
+      ],
+      "requires_dist": [
+        "pre-commit; extra == \"dev\"",
+        "tox; extra == \"dev\"",
+        "pytest; extra == \"testing\"",
+        "pytest-benchmark; extra == \"testing\"",
+        "coverage; extra == \"testing\""
+      ]
+    },
+    {
+      "name": "psycopg",
+      "version": "3.3.5",
+      "declared_license": "LGPL-3.0-only",
+      "evidence": "installed pinned distribution metadata and bundled license texts",
+      "license_texts": [
+        {
+          "path": "third_party/licenses/psycopg/LICENSE.txt",
+          "sha256": "e3a994d82e644b03a792a930f574002658412f62407f5fee083f2555c5f23118"
+        }
+      ],
+      "requires_dist": [
+        "typing-extensions>=4.6; python_version < \"3.13\"",
+        "tzdata; sys_platform == \"win32\"",
+        "psycopg-c==3.3.5; implementation_name != \"pypy\" and extra == \"c\"",
+        "psycopg-binary==3.3.5; implementation_name != \"pypy\" and extra == \"binary\"",
+        "psycopg-pool; extra == \"pool\"",
+        "anyio>=4.0; extra == \"test\"",
+        "mypy>=2.1.0; implementation_name != \"pypy\" and extra == \"test\"",
+        "pproxy>=2.7; extra == \"test\"",
+        "pytest>=6.2.5; extra == \"test\"",
+        "pytest-cov>=3.0; extra == \"test\"",
+        "pytest-randomly>=3.5; extra == \"test\"",
+        "ast-comments>=1.1.2; extra == \"dev\"",
+        "black>=26.1.0; extra == \"dev\"",
+        "codespell>=2.2; extra == \"dev\"",
+        "cython-lint>=0.21; extra == \"dev\"",
+        "dnspython>=2.1; extra == \"dev\"",
+        "flake8>=4.0; extra == \"dev\"",
+        "isort[colors]<9.0,>=6.0; extra == \"dev\"",
+        "isort-psycopg; extra == \"dev\"",
+        "mypy>=2.1.0; extra == \"dev\"",
+        "pre-commit>=4.0.1; extra == \"dev\"",
+        "types-setuptools>=57.4; extra == \"dev\"",
+        "types-shapely>=2.0; extra == \"dev\"",
+        "wheel>=0.37; extra == \"dev\"",
+        "Sphinx>=9.1; extra == \"docs\"",
+        "furo==2025.12.19; extra == \"docs\"",
+        "sphinx-autobuild>=2025.8.25; extra == \"docs\"",
+        "sphinx-autodoc-typehints>=3.10.2; extra == \"docs\""
+      ]
+    },
+    {
+      "name": "psycopg-binary",
+      "version": "3.3.5",
+      "declared_license": "LGPL-3.0-only",
+      "evidence": "installed pinned distribution metadata and bundled license texts",
+      "license_texts": [
+        {
+          "path": "third_party/licenses/psycopg-binary/LICENSE.txt",
+          "sha256": "e3a994d82e644b03a792a930f574002658412f62407f5fee083f2555c5f23118"
+        }
+      ],
+      "requires_dist": []
+    },
+    {
+      "name": "pydantic",
+      "version": "2.13.5",
+      "declared_license": "MIT",
+      "evidence": "installed pinned distribution metadata and bundled license texts",
+      "license_texts": [
+        {
+          "path": "third_party/licenses/pydantic/LICENSE",
+          "sha256": "a9e186f3ca16b5eef84318e7a701721351a00cb7b8ae3a4394b67b49e3529ef3"
+        }
+      ],
+      "requires_dist": [
+        "annotated-types>=0.6.0",
+        "pydantic-core==2.46.5",
+        "typing-extensions>=4.14.1",
+        "typing-inspection>=0.4.2",
+        "email-validator>=2.0.0; extra == 'email'",
+        "tzdata; (python_version >= '3.9' and platform_system == 'Windows') and extra == 'timezone'"
+      ]
+    },
+    {
+      "name": "pydantic_core",
+      "version": "2.46.5",
+      "declared_license": "MIT",
+      "evidence": "installed pinned distribution metadata and bundled license texts",
+      "license_texts": [
+        {
+          "path": "third_party/licenses/pydantic_core/LICENSE",
+          "sha256": "2afdd30d54b4d62b6f488a6bcc1546e84ec5061f13f4209c03d012348783795a"
+        }
+      ],
+      "requires_dist": [
+        "typing-extensions>=4.14.1"
+      ]
+    },
+    {
+      "name": "Pygments",
+      "version": "2.21.0",
+      "declared_license": "BSD-2-Clause",
+      "evidence": "installed pinned distribution metadata and bundled license texts",
+      "license_texts": [
+        {
+          "path": "third_party/licenses/Pygments/AUTHORS",
+          "sha256": "71a83872ad82f57be692cf827e048e2cd51d45169cfa1ea3f28706d97a872c0f"
+        },
+        {
+          "path": "third_party/licenses/Pygments/LICENSE",
+          "sha256": "a9d66f1d526df02e29dce73436d34e56e8632f46c275bbdffc70569e882f9f17"
+        }
+      ],
+      "requires_dist": [
+        "colorama>=0.4.6; extra == 'windows-terminal'"
+      ]
+    },
+    {
+      "name": "pytest",
+      "version": "9.0.3",
+      "declared_license": "MIT",
+      "evidence": "installed pinned distribution metadata and bundled license texts",
+      "license_texts": [
+        {
+          "path": "third_party/licenses/pytest/LICENSE",
+          "sha256": "ca836a5f9ecca3b2f350230faa20a48fb8b145653b5568d784862df864706b9b"
+        }
+      ],
+      "requires_dist": [
+        "colorama>=0.4; sys_platform == \"win32\"",
+        "exceptiongroup>=1; python_version < \"3.11\"",
+        "iniconfig>=1.0.1",
+        "packaging>=22",
+        "pluggy<2,>=1.5",
+        "pygments>=2.7.2",
+        "tomli>=1; python_version < \"3.11\"",
+        "argcomplete; extra == \"dev\"",
+        "attrs>=19.2; extra == \"dev\"",
+        "hypothesis>=3.56; extra == \"dev\"",
+        "mock; extra == \"dev\"",
+        "requests; extra == \"dev\"",
+        "setuptools; extra == \"dev\"",
+        "xmlschema; extra == \"dev\""
+      ]
+    },
+    {
+      "name": "referencing",
+      "version": "0.37.0",
+      "declared_license": "MIT",
+      "evidence": "installed pinned distribution metadata and bundled license texts",
+      "license_texts": [
+        {
+          "path": "third_party/licenses/referencing/COPYING",
+          "sha256": "42dcd63495f87b4eb7c7757afa379bb55a53f94afd7a5f657d9adf57236e515c"
+        }
+      ],
+      "requires_dist": [
+        "attrs>=22.2.0",
+        "rpds-py>=0.7.0",
+        "typing-extensions>=4.4.0; python_version < '3.13'"
+      ]
+    },
+    {
+      "name": "rpds-py",
+      "version": "2026.6.3",
+      "declared_license": "MIT",
+      "evidence": "installed pinned distribution metadata and bundled license texts",
+      "license_texts": [
+        {
+          "path": "third_party/licenses/rpds-py/LICENSE",
+          "sha256": "314e4e91be3baa93c0fb4bccc9e4e97cd643eb839b065af921782c2175fe9909"
+        }
+      ],
+      "requires_dist": []
+    },
+    {
+      "name": "SQLAlchemy",
+      "version": "2.0.54",
+      "declared_license": "MIT",
+      "evidence": "installed pinned distribution metadata and bundled license texts",
+      "license_texts": [
+        {
+          "path": "third_party/licenses/SQLAlchemy/AUTHORS",
+          "sha256": "dc1db0b5d17455adc37b693ff8e409c9a80f603e441695825518c36f786c963e"
+        },
+        {
+          "path": "third_party/licenses/SQLAlchemy/LICENSE",
+          "sha256": "e862bb5b904fb5513c3e14288d7a25a12eb0ecc7847a0a965d310e9a955e7cb9"
+        }
+      ],
+      "requires_dist": [
+        "importlib-metadata; python_version < \"3.8\"",
+        "greenlet>=1; platform_machine == \"aarch64\" or (platform_machine == \"ppc64le\" or (platform_machine == \"x86_64\" or (platform_machine == \"amd64\" or (platform_machine == \"AMD64\" or (platform_machine == \"win32\" or platform_machine == \"WIN32\")))))",
+        "typing-extensions>=4.6.0",
+        "greenlet>=1; extra == \"asyncio\"",
+        "mypy>=0.910; extra == \"mypy\"",
+        "pyodbc; extra == \"mssql\"",
+        "pymssql; extra == \"mssql-pymssql\"",
+        "pyodbc; extra == \"mssql-pyodbc\"",
+        "mysqlclient>=1.4.0; extra == \"mysql\"",
+        "mysql-connector-python; extra == \"mysql-connector\"",
+        "mariadb!=1.1.10,!=1.1.2,!=1.1.5,>=1.0.1; extra == \"mariadb-connector\"",
+        "cx_oracle>=8; extra == \"oracle\"",
+        "oracledb>=1.0.1; extra == \"oracle-oracledb\"",
+        "psycopg2>=2.7; extra == \"postgresql\"",
+        "pg8000>=1.29.1; extra == \"postgresql-pg8000\"",
+        "greenlet>=1; extra == \"postgresql-asyncpg\"",
+        "asyncpg; extra == \"postgresql-asyncpg\"",
+        "psycopg2-binary; extra == \"postgresql-psycopg2binary\"",
+        "psycopg2cffi; extra == \"postgresql-psycopg2cffi\"",
+        "psycopg>=3.0.7; extra == \"postgresql-psycopg\"",
+        "psycopg[binary]>=3.0.7; extra == \"postgresql-psycopgbinary\"",
+        "pymysql; extra == \"pymysql\"",
+        "greenlet>=1; extra == \"aiomysql\"",
+        "aiomysql>=0.2.0; extra == \"aiomysql\"",
+        "greenlet>=1; extra == \"aioodbc\"",
+        "aioodbc; extra == \"aioodbc\"",
+        "greenlet>=1; extra == \"asyncmy\"",
+        "asyncmy>=0.2.12; extra == \"asyncmy\"",
+        "greenlet>=1; extra == \"aiosqlite\"",
+        "aiosqlite; extra == \"aiosqlite\"",
+        "typing_extensions!=3.10.0.1; extra == \"aiosqlite\"",
+        "sqlcipher3_binary; extra == \"sqlcipher\""
+      ]
+    },
+    {
+      "name": "typing-inspection",
+      "version": "0.4.4",
+      "declared_license": "MIT",
+      "evidence": "installed pinned distribution metadata and bundled license texts",
+      "license_texts": [
+        {
+          "path": "third_party/licenses/typing-inspection/LICENSE",
+          "sha256": "804b59b25f2c31bd278f9202a19ae49a3945aa2664387e2d0a128c7cacc61ec3"
+        }
+      ],
+      "requires_dist": [
+        "typing-extensions>=4.15.0"
+      ]
+    },
+    {
+      "name": "typing_extensions",
+      "version": "4.16.0",
+      "declared_license": "PSF-2.0",
+      "evidence": "installed pinned distribution metadata and bundled license texts",
+      "license_texts": [
+        {
+          "path": "third_party/licenses/typing_extensions/LICENSE",
+          "sha256": "3b2f81fe21d181c499c59a256c8e1968455d6689d269aa85373bfb6af41da3bf"
+        }
+      ],
+      "requires_dist": []
+    },
+    {
+      "name": "rfc8785",
+      "version": "0.1.4",
+      "declared_license": "Apache-2.0",
+      "evidence": "installed pinned distribution metadata and bundled license texts",
+      "license_texts": [
+        {
+          "path": "third_party/licenses/rfc8785/LICENSE",
+          "sha256": "0d542e0c8804e39aa7f37eb00da5a762149dc682d7829451287e11b938e94594"
+        }
+      ],
+      "requires_dist": [
+        "rfc8785[doc,test,lint] ; extra == \"dev\"",
+        "build ; extra == \"dev\"",
+        "pdoc ; extra == \"doc\"",
+        "ruff ~= 0.3 ; extra == \"lint\"",
+        "mypy >= 1.0 ; extra == \"lint\"",
+        "interrogate ; extra == \"lint\"",
+        "pytest ; extra == \"test\"",
+        "pytest-cov ; extra == \"test\"",
+        "coverage ; extra == \"test\""
+      ]
+    },
+    {
+      "name": "cbor2",
+      "version": "6.1.4",
+      "declared_license": "MIT",
+      "evidence": "installed pinned distribution metadata and bundled license texts",
+      "license_texts": [
+        {
+          "path": "third_party/licenses/cbor2/LICENSE.txt",
+          "sha256": "a6afd126d8f545a15166a22f25fadff4b9fb4978bbdd17e97d97d950b66d2fef"
+        }
+      ],
+      "requires_dist": []
+    },
+    {
+      "name": "cffi",
+      "version": "2.1.1",
+      "declared_license": "MIT-0",
+      "evidence": "installed pinned distribution metadata and bundled license texts",
+      "license_texts": [
+        {
+          "path": "third_party/licenses/cffi/LICENSE",
+          "sha256": "5ba24ddc57067f9249add644c3afc41a5d6dc37e23433ef759d95df370b0af63"
+        }
+      ],
+      "requires_dist": [
+        "pycparser; implementation_name != \"PyPy\""
+      ]
+    },
+    {
+      "name": "cryptography",
+      "version": "50.0.1",
+      "declared_license": "Apache-2.0 OR BSD-3-Clause",
+      "evidence": "installed pinned distribution metadata and bundled license texts",
+      "license_texts": [
+        {
+          "path": "third_party/licenses/cryptography/LICENSE",
+          "sha256": "3e0c7c091a948b82533ba98fd7cbb40432d6f1a9acbf85f5922d2f99a93ae6bb"
+        },
+        {
+          "path": "third_party/licenses/cryptography/LICENSE.APACHE",
+          "sha256": "aac73b3148f6d1d7111dbca32099f68d26c644c6813ae1e4f05f6579aa2663fe"
+        },
+        {
+          "path": "third_party/licenses/cryptography/LICENSE.BSD",
+          "sha256": "602c4c7482de6479dd2e9793cda275e5e63d773dacd1eca689232ab7008fb4fb"
+        }
+      ],
+      "requires_dist": [
+        "cffi>=2.0.0 ; platform_python_implementation != 'PyPy'",
+        "typing-extensions>=4.13.2 ; python_full_version < '3.11'",
+        "bcrypt>=3.1.5 ; extra == 'ssh'"
+      ]
+    },
+    {
+      "name": "pyasn1",
+      "version": "0.6.4",
+      "declared_license": "BSD-2-Clause",
+      "evidence": "installed pinned distribution metadata and bundled license texts",
+      "license_texts": [
+        {
+          "path": "third_party/licenses/pyasn1/LICENSE.rst",
+          "sha256": "2aad5fc00f705c4a1addb83eed10a6a75d286a3779f0cf8519d87e62bc4735fd"
+        }
+      ],
+      "requires_dist": []
+    },
+    {
+      "name": "pyasn1_modules",
+      "version": "0.4.2",
+      "declared_license": "BSD-2-Clause",
+      "evidence": "installed pinned distribution metadata and bundled license texts",
+      "license_texts": [
+        {
+          "path": "third_party/licenses/pyasn1_modules/LICENSE.txt",
+          "sha256": "2aad5fc00f705c4a1addb83eed10a6a75d286a3779f0cf8519d87e62bc4735fd"
+        }
+      ],
+      "requires_dist": [
+        "pyasn1<0.7.0,>=0.6.1"
+      ]
+    },
+    {
+      "name": "pycparser",
+      "version": "3.0",
+      "declared_license": "BSD-3-Clause",
+      "evidence": "installed pinned distribution metadata and bundled license texts",
+      "license_texts": [
+        {
+          "path": "third_party/licenses/pycparser/LICENSE",
+          "sha256": "0c846399369ea76ddd7b5c44fe6d16497415fcf015f5cbb508c24bf98b81c5b1"
+        }
+      ],
+      "requires_dist": []
+    },
+    {
+      "name": "pyOpenSSL",
+      "version": "26.4.0",
+      "declared_license": "Apache-2.0",
+      "evidence": "installed pinned distribution metadata and bundled license texts",
+      "license_texts": [
+        {
+          "path": "third_party/licenses/pyOpenSSL/LICENSE",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+        }
+      ],
+      "requires_dist": [
+        "cryptography<51,>=49.0.0",
+        "typing-extensions>=4.9; python_version < \"3.13\"",
+        "pytest-rerunfailures; extra == \"test\"",
+        "pretend; extra == \"test\"",
+        "pytest>=3.0.1; extra == \"test\"",
+        "sphinx!=5.2.0,!=5.2.0.post0,!=7.2.5; extra == \"docs\"",
+        "sphinx_rtd_theme; extra == \"docs\""
+      ]
+    },
+    {
+      "name": "webauthn",
+      "version": "3.0.0",
+      "declared_license": "BSD-3-Clause",
+      "evidence": "installed pinned distribution metadata and bundled license texts",
+      "license_texts": [
+        {
+          "path": "third_party/licenses/webauthn/LICENSE",
+          "sha256": "5922ad23a214080d72535c733f69aa36de0f0135f7e5859239758a550042de81"
+        }
+      ],
+      "requires_dist": [
+        "pyasn1>=0.6.2",
+        "pyasn1-modules>=0.4.2",
+        "cbor2>=6.1.2",
+        "cryptography>=49.0.0",
+        "pyOpenSSL>=26.3.0"
+      ]
+    },
+    {
+      "name": "greenlet",
+      "version": "3.5.6",
+      "declared_license": "MIT AND PSF-2.0",
+      "evidence": "Selected official Linux wheel METADATA and license texts",
+      "license_texts": [
+        {
+          "path": "third_party/licenses/greenlet/wheel-members/greenlet-3.5.6.dist-info/licenses/LICENSE",
+          "sha256": "769831d6e5dfaf2c20802faccff1fafb4c2025dd8f6253dfa47fcad59d4d0979"
+        },
+        {
+          "path": "third_party/licenses/greenlet/wheel-members/greenlet-3.5.6.dist-info/licenses/LICENSE.PSF",
+          "sha256": "e5ff3c23c110e494cd7d736c10fd96d462457bafeca310840db6527298c7d46b"
+        }
+      ],
+      "requires_dist": [],
+      "condition": "Linux x86_64 only in this supported matrix; SQLAlchemy platform dependency"
+    }
+  ]
+}

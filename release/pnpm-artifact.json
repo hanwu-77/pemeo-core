@@ -1,0 +1,12 @@
+{
+  "name": "pnpm",
+  "version": "11.19.0",
+  "url": "https://registry.npmjs.org/pnpm/-/pnpm-11.19.0.tgz",
+  "integrity": "sha512-eIHz7VkNRyxKlV4riLISF5ERYGbcyIy8o4SeybYPG7qm0syyIfqR2k4cZb7yvL43k2Wup6xTnHv4be3DobItzg==",
+  "sha256": "b9e49603540d04107b98e93917a30e6114970d403c23e40309a44ea9c2bca7fd",
+  "metadata_url": "https://registry.npmjs.org/pnpm/11.19.0",
+  "metadata_sha256": "e0432cd15c44cc284caf17c9dc412c009f7cd5b1d962a189bd35d08311dd34d6",
+  "engines": {
+    "node": ">=22.13"
+  }
+}

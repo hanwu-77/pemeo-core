@@ -1,0 +1,2139 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ecom.local/schema/ecom-protocol-v0.1.schema.json",
+  "title": "ECOM Measurement & Intervention Protocol v0.1",
+  "description": "Protocol-level schema for append-only ECOM cognitive, intervention, provenance, and experimental records. W3C PROV-aligned with ECOM-specific extensions. Storage immutability, referential integrity, access control, and cryptographic guarantees MUST be enforced by the persistence/governance layers; JSON Schema validates record shape and local semantic constraints only.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "protocolVersion",
+    "schemaVersion",
+    "records"
+  ],
+  "properties": {
+    "protocolVersion": {
+      "const": "0.1"
+    },
+    "schemaVersion": {
+      "const": "0.1.0"
+    },
+    "datasetId": {
+      "$ref": "#/$defs/uuid"
+    },
+    "createdAt": {
+      "$ref": "#/$defs/dateTime"
+    },
+    "records": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/record"
+      }
+    }
+  },
+  "$defs": {
+    "uuid": {
+      "type": "string",
+      "format": "uuid"
+    },
+    "dateTime": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "nonEmptyString": {
+      "type": "string",
+      "minLength": 1
+    },
+    "recordRef": {
+      "$ref": "#/$defs/uuid"
+    },
+    "recordKind": {
+      "type": "string",
+      "enum": [
+        "entity",
+        "activity",
+        "agent",
+        "event",
+        "relation"
+      ]
+    },
+    "sourceKind": {
+      "type": "string",
+      "enum": [
+        "human",
+        "ecom",
+        "external_sensor",
+        "system_log",
+        "external_system"
+      ]
+    },
+    "attestation": {
+      "type": "string",
+      "enum": [
+        "direct",
+        "derived",
+        "assigned",
+        "observed",
+        "system_generated"
+      ]
+    },
+    "verification": {
+      "type": "string",
+      "enum": [
+        "verified",
+        "unverified",
+        "not_applicable",
+        "disputed"
+      ]
+    },
+    "modelReportedConfidence": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "enum": [
+        "low",
+        "medium",
+        "high",
+        null
+      ]
+    },
+    "calibratedInferenceProbability": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 0,
+      "maximum": 1
+    },
+    "humanConfidence": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 0,
+      "maximum": 1,
+      "description": "Human self-assessed confidence. Distinct from predicted probability and AI inference confidence."
+    },
+    "sourceDescriptor": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "kind"
+      ],
+      "properties": {
+        "kind": {
+          "$ref": "#/$defs/sourceKind"
+        },
+        "agentRef": {
+          "$ref": "#/$defs/recordRef"
+        },
+        "externalRef": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "channel": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "provenanceMetadata": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "modelVersion": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "policyVersion": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "promptVersion": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "evidenceRefs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/recordRef"
+          },
+          "uniqueItems": true
+        },
+        "relationRefs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/recordRef"
+          },
+          "uniqueItems": true
+        },
+        "protocolSourceVersion": {
+          "const": "0.1"
+        }
+      },
+      "required": [
+        "protocolSourceVersion",
+        "evidenceRefs",
+        "relationRefs"
+      ]
+    },
+    "baseMetadata": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "source",
+        "attestation",
+        "verification",
+        "provenance"
+      ],
+      "properties": {
+        "source": {
+          "$ref": "#/$defs/sourceDescriptor"
+        },
+        "attestation": {
+          "$ref": "#/$defs/attestation"
+        },
+        "verification": {
+          "$ref": "#/$defs/verification"
+        },
+        "modelReportedConfidence": {
+          "$ref": "#/$defs/modelReportedConfidence"
+        },
+        "calibratedInferenceProbability": {
+          "$ref": "#/$defs/calibratedInferenceProbability"
+        },
+        "provenance": {
+          "$ref": "#/$defs/provenanceMetadata"
+        },
+        "tags": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true
+        }
+      }
+    },
+    "baseRecord": {
+      "type": "object",
+      "required": [
+        "recordId",
+        "protocolVersion",
+        "schemaVersion",
+        "kind",
+        "type",
+        "createdAt",
+        "metadata",
+        "payload"
+      ],
+      "properties": {
+        "recordId": {
+          "$ref": "#/$defs/uuid"
+        },
+        "protocolVersion": {
+          "const": "0.1"
+        },
+        "schemaVersion": {
+          "const": "0.1.0"
+        },
+        "kind": {
+          "$ref": "#/$defs/recordKind"
+        },
+        "type": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "createdAt": {
+          "$ref": "#/$defs/dateTime"
+        },
+        "occurredAt": {
+          "$ref": "#/$defs/dateTime"
+        },
+        "metadata": {
+          "$ref": "#/$defs/baseMetadata"
+        },
+        "payload": {
+          "type": "object"
+        }
+      }
+    },
+    "agentRecord": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/baseRecord"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "kind": {
+              "const": "agent"
+            },
+            "type": {
+              "const": "agent"
+            },
+            "payload": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "agentType",
+                "label"
+              ],
+              "properties": {
+                "agentType": {
+                  "type": "string",
+                  "enum": [
+                    "human",
+                    "ecom",
+                    "external_sensor",
+                    "system_log",
+                    "external_system"
+                  ]
+                },
+                "label": {
+                  "$ref": "#/$defs/nonEmptyString"
+                },
+                "version": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                }
+              }
+            }
+          }
+        }
+      ],
+      "unevaluatedProperties": false
+    },
+    "contextSnapshot": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/baseRecord"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "kind": {
+              "const": "entity"
+            },
+            "type": {
+              "const": "context_snapshot"
+            },
+            "payload": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "domain",
+                "stakes",
+                "urgency",
+                "timePressure"
+              ],
+              "properties": {
+                "domain": {
+                  "$ref": "#/$defs/nonEmptyString"
+                },
+                "stakes": {
+                  "type": "string",
+                  "enum": [
+                    "low",
+                    "medium",
+                    "high"
+                  ]
+                },
+                "urgency": {
+                  "type": "string",
+                  "enum": [
+                    "low",
+                    "medium",
+                    "high"
+                  ]
+                },
+                "timePressure": {
+                  "type": "string",
+                  "enum": [
+                    "low",
+                    "medium",
+                    "high"
+                  ]
+                },
+                "notes": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                }
+              }
+            }
+          }
+        }
+      ],
+      "unevaluatedProperties": false
+    },
+    "humanStatement": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/baseRecord"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "kind": {
+              "const": "entity"
+            },
+            "type": {
+              "const": "human_statement"
+            },
+            "payload": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "content",
+                "modality"
+              ],
+              "properties": {
+                "content": {
+                  "$ref": "#/$defs/nonEmptyString"
+                },
+                "modality": {
+                  "type": "string",
+                  "enum": [
+                    "text",
+                    "voice_transcript",
+                    "form",
+                    "other"
+                  ]
+                },
+                "language": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                }
+              }
+            },
+            "metadata": {
+              "$ref": "#/$defs/humanDirectMetadata"
+            }
+          }
+        }
+      ],
+      "unevaluatedProperties": false
+    },
+    "humanSnapshot": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/baseRecord"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "kind": {
+              "const": "entity"
+            },
+            "type": {
+              "const": "human_snapshot"
+            },
+            "payload": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "beliefs",
+                "assumptions",
+                "unknowns",
+                "reasons"
+              ],
+              "properties": {
+                "beliefs": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "assumptions": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "unknowns": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "reasons": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "humanConfidence": {
+                  "$ref": "#/$defs/humanConfidence"
+                },
+                "predictionRefs": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/$defs/recordRef"
+                  },
+                  "uniqueItems": true
+                }
+              }
+            },
+            "metadata": {
+              "$ref": "#/$defs/humanDirectMetadata"
+            }
+          }
+        }
+      ],
+      "unevaluatedProperties": false
+    },
+    "humanInitialChoice": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/baseRecord"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "kind": {
+              "const": "entity"
+            },
+            "type": {
+              "const": "human_initial_choice"
+            },
+            "payload": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "choice"
+              ],
+              "properties": {
+                "choice": {
+                  "$ref": "#/$defs/nonEmptyString"
+                },
+                "humanConfidence": {
+                  "$ref": "#/$defs/humanConfidence"
+                },
+                "optionRef": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                }
+              }
+            },
+            "metadata": {
+              "$ref": "#/$defs/humanDirectMetadata"
+            }
+          }
+        }
+      ],
+      "unevaluatedProperties": false
+    },
+    "inferredFraming": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/baseRecord"
+        },
+        {
+          "type": "object",
+          "required": [
+            "metadata"
+          ],
+          "properties": {
+            "kind": {
+              "const": "entity"
+            },
+            "type": {
+              "const": "inferred_framing"
+            },
+            "metadata": {
+              "$ref": "#/$defs/ecomDerivedMetadata"
+            },
+            "payload": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "framingSummary",
+                "inferredAssumptions",
+                "inferredPreferences"
+              ],
+              "properties": {
+                "framingSummary": {
+                  "$ref": "#/$defs/nonEmptyString"
+                },
+                "inferredAssumptions": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "inferredPreferences": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "unevaluatedProperties": false
+    },
+    "resolutionRule": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "criterion",
+        "resolutionAt"
+      ],
+      "properties": {
+        "criterion": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "resolutionAt": {
+          "$ref": "#/$defs/dateTime"
+        },
+        "resolver": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "dataSource": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "notes": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "prediction": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/baseRecord"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "kind": {
+              "const": "entity"
+            },
+            "type": {
+              "const": "prediction"
+            },
+            "payload": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "target",
+                "predictedProbability",
+                "resolutionRule"
+              ],
+              "properties": {
+                "target": {
+                  "$ref": "#/$defs/nonEmptyString"
+                },
+                "predictedProbability": {
+                  "type": "number",
+                  "minimum": 0,
+                  "maximum": 1
+                },
+                "resolutionRule": {
+                  "$ref": "#/$defs/resolutionRule"
+                },
+                "rationale": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "unknowns": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "unevaluatedProperties": false
+    },
+    "ecomOutput": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/baseRecord"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "kind": {
+              "const": "entity"
+            },
+            "type": {
+              "const": "ecom_output"
+            },
+            "payload": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "content",
+                "outputMode"
+              ],
+              "properties": {
+                "content": {
+                  "$ref": "#/$defs/nonEmptyString"
+                },
+                "outputMode": {
+                  "type": "string",
+                  "enum": [
+                    "direct",
+                    "socratic",
+                    "checklist",
+                    "refute",
+                    "listen",
+                    "control_none",
+                    "other"
+                  ]
+                },
+                "assignmentRef": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "format": "uuid"
+                }
+              }
+            },
+            "metadata": {
+              "$ref": "#/$defs/ecomOutputMetadata"
+            }
+          }
+        }
+      ],
+      "unevaluatedProperties": false
+    },
+    "proximalOutcomeSpec": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/baseRecord"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "kind": {
+              "const": "entity"
+            },
+            "type": {
+              "const": "proximal_outcome_spec"
+            },
+            "payload": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "measure",
+                "windowMinutes",
+                "criterion"
+              ],
+              "properties": {
+                "measure": {
+                  "$ref": "#/$defs/nonEmptyString"
+                },
+                "windowMinutes": {
+                  "type": "integer",
+                  "minimum": 1
+                },
+                "criterion": {
+                  "$ref": "#/$defs/nonEmptyString"
+                },
+                "unit": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                }
+              }
+            }
+          }
+        }
+      ],
+      "unevaluatedProperties": false
+    },
+    "humanConfirmation": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/baseRecord"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "kind": {
+              "const": "entity"
+            },
+            "type": {
+              "const": "human_confirmation"
+            },
+            "payload": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "targetRef",
+                "confirmationText"
+              ],
+              "properties": {
+                "targetRef": {
+                  "$ref": "#/$defs/recordRef"
+                },
+                "confirmationText": {
+                  "$ref": "#/$defs/nonEmptyString"
+                },
+                "scope": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                }
+              }
+            },
+            "metadata": {
+              "$ref": "#/$defs/humanDirectMetadata"
+            }
+          }
+        }
+      ],
+      "unevaluatedProperties": false
+    },
+    "finalDecision": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/baseRecord"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "kind": {
+              "const": "entity"
+            },
+            "type": {
+              "const": "final_decision"
+            },
+            "payload": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "choice"
+              ],
+              "properties": {
+                "choice": {
+                  "$ref": "#/$defs/nonEmptyString"
+                },
+                "humanConfidence": {
+                  "$ref": "#/$defs/humanConfidence"
+                },
+                "optionRef": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                }
+              }
+            },
+            "metadata": {
+              "$ref": "#/$defs/humanDirectMetadata"
+            }
+          }
+        }
+      ],
+      "unevaluatedProperties": false
+    },
+    "outcomeCriterion": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "name",
+        "successRule"
+      ],
+      "properties": {
+        "name": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "successRule": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "measure": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "threshold": {},
+        "unit": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "outcomeProposal": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/baseRecord"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "kind": {
+              "const": "entity"
+            },
+            "type": {
+              "const": "outcome_proposal"
+            },
+            "payload": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "criteria",
+                "evaluationAt"
+              ],
+              "properties": {
+                "criteria": {
+                  "type": "array",
+                  "minItems": 1,
+                  "items": {
+                    "$ref": "#/$defs/outcomeCriterion"
+                  }
+                },
+                "evaluationAt": {
+                  "$ref": "#/$defs/dateTime"
+                },
+                "notes": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                }
+              }
+            }
+          }
+        }
+      ],
+      "unevaluatedProperties": false
+    },
+    "outcomeCommitment": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/baseRecord"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "kind": {
+              "const": "entity"
+            },
+            "type": {
+              "const": "outcome_commitment"
+            },
+            "payload": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "proposalRef",
+                "criteria",
+                "evaluationAt",
+                "committedAt"
+              ],
+              "properties": {
+                "proposalRef": {
+                  "$ref": "#/$defs/recordRef"
+                },
+                "criteria": {
+                  "type": "array",
+                  "minItems": 1,
+                  "items": {
+                    "$ref": "#/$defs/outcomeCriterion"
+                  }
+                },
+                "evaluationAt": {
+                  "$ref": "#/$defs/dateTime"
+                },
+                "committedAt": {
+                  "$ref": "#/$defs/dateTime"
+                }
+              }
+            },
+            "metadata": {
+              "$ref": "#/$defs/humanDirectMetadata"
+            }
+          }
+        }
+      ],
+      "unevaluatedProperties": false
+    },
+    "recallPayload": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "recalledBeliefs",
+        "recalledReasons",
+        "recalledAssumptions"
+      ],
+      "properties": {
+        "recalledBeliefs": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "recalledReasons": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "recalledAssumptions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "recalledUnknowns": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "recalledPredictedProbability": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 1
+        },
+        "recalledHumanConfidence": {
+          "$ref": "#/$defs/humanConfidence"
+        },
+        "informationExposureRefs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/recordRef"
+          },
+          "uniqueItems": true
+        }
+      }
+    },
+    "recallPreOutcome": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/baseRecord"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "kind": {
+              "const": "entity"
+            },
+            "type": {
+              "const": "recall_pre_outcome"
+            },
+            "payload": {
+              "$ref": "#/$defs/recallPayload"
+            },
+            "metadata": {
+              "$ref": "#/$defs/humanDirectMetadata"
+            }
+          }
+        }
+      ],
+      "unevaluatedProperties": false
+    },
+    "recallPostOutcome": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/baseRecord"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "kind": {
+              "const": "entity"
+            },
+            "type": {
+              "const": "recall_post_outcome"
+            },
+            "payload": {
+              "$ref": "#/$defs/recallPayload"
+            },
+            "metadata": {
+              "$ref": "#/$defs/humanDirectMetadata"
+            }
+          }
+        }
+      ],
+      "unevaluatedProperties": false
+    },
+    "reflection": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/baseRecord"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "kind": {
+              "const": "entity"
+            },
+            "type": {
+              "const": "reflection"
+            },
+            "payload": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "summary"
+              ],
+              "properties": {
+                "summary": {
+                  "$ref": "#/$defs/nonEmptyString"
+                },
+                "attributions": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "lessons": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "openQuestions": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "unevaluatedProperties": false
+    },
+    "decisionPoint": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/baseRecord"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "kind": {
+              "const": "event"
+            },
+            "type": {
+              "const": "decision_point"
+            },
+            "payload": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "contextRef",
+                "description"
+              ],
+              "properties": {
+                "contextRef": {
+                  "$ref": "#/$defs/recordRef"
+                },
+                "description": {
+                  "$ref": "#/$defs/nonEmptyString"
+                },
+                "eligibleForMrt": {
+                  "type": "boolean"
+                },
+                "eligibilityReason": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                }
+              }
+            }
+          },
+          "required": [
+            "occurredAt"
+          ]
+        }
+      ],
+      "unevaluatedProperties": false
+    },
+    "interventionAssignment": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/baseRecord"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "kind": {
+              "const": "event"
+            },
+            "type": {
+              "const": "intervention_assignment"
+            },
+            "payload": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "decisionPointRef",
+                "availability",
+                "randomizationProbability",
+                "assignedIntervention",
+                "eligibilityMaskVersion"
+              ],
+              "properties": {
+                "decisionPointRef": {
+                  "$ref": "#/$defs/recordRef"
+                },
+                "availability": {
+                  "type": "boolean"
+                },
+                "randomizationProbability": {
+                  "type": "number",
+                  "minimum": 0,
+                  "maximum": 1
+                },
+                "assignedIntervention": {
+                  "type": "string",
+                  "enum": [
+                    "direct",
+                    "socratic",
+                    "checklist",
+                    "refute",
+                    "listen",
+                    "control_none",
+                    "other"
+                  ]
+                },
+                "eligibilityMaskVersion": {
+                  "const": "0.1"
+                },
+                "userOptedIn": {
+                  "type": "boolean"
+                },
+                "assignmentReason": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                }
+              }
+            },
+            "metadata": {
+              "$ref": "#/$defs/ecomAssignedMetadata"
+            }
+          },
+          "required": [
+            "occurredAt"
+          ]
+        }
+      ],
+      "unevaluatedProperties": false
+    },
+    "exposurePresented": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/baseRecord"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "kind": {
+              "const": "event"
+            },
+            "type": {
+              "const": "exposure_presented"
+            },
+            "payload": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "outputRef",
+                "channel"
+              ],
+              "properties": {
+                "outputRef": {
+                  "$ref": "#/$defs/recordRef"
+                },
+                "channel": {
+                  "$ref": "#/$defs/nonEmptyString"
+                }
+              }
+            },
+            "metadata": {
+              "$ref": "#/$defs/systemObservedMetadata"
+            }
+          },
+          "required": [
+            "occurredAt"
+          ]
+        }
+      ],
+      "unevaluatedProperties": false
+    },
+    "exposureAccessed": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/baseRecord"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "kind": {
+              "const": "event"
+            },
+            "type": {
+              "const": "exposure_accessed"
+            },
+            "payload": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "outputRef",
+                "accessSignal"
+              ],
+              "properties": {
+                "outputRef": {
+                  "$ref": "#/$defs/recordRef"
+                },
+                "accessSignal": {
+                  "type": "string",
+                  "enum": [
+                    "opened",
+                    "visible",
+                    "scroll",
+                    "focus",
+                    "dwell",
+                    "other"
+                  ]
+                },
+                "durationMs": {
+                  "type": [
+                    "integer",
+                    "null"
+                  ],
+                  "minimum": 0
+                }
+              }
+            },
+            "metadata": {
+              "$ref": "#/$defs/systemObservedMetadata"
+            }
+          },
+          "required": [
+            "occurredAt"
+          ]
+        }
+      ],
+      "unevaluatedProperties": false
+    },
+    "exposureAcknowledged": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/baseRecord"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "kind": {
+              "const": "event"
+            },
+            "type": {
+              "const": "exposure_acknowledged"
+            },
+            "payload": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "outputRef",
+                "acknowledgement"
+              ],
+              "properties": {
+                "outputRef": {
+                  "$ref": "#/$defs/recordRef"
+                },
+                "acknowledgement": {
+                  "type": "string",
+                  "enum": [
+                    "read",
+                    "understood",
+                    "used",
+                    "other"
+                  ]
+                },
+                "note": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                }
+              }
+            },
+            "metadata": {
+              "$ref": "#/$defs/humanDirectMetadata"
+            }
+          },
+          "required": [
+            "occurredAt"
+          ]
+        }
+      ],
+      "unevaluatedProperties": false
+    },
+    "proximalOutcomeObservation": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/baseRecord"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "kind": {
+              "const": "event"
+            },
+            "type": {
+              "const": "proximal_outcome_observation"
+            },
+            "payload": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "specRef",
+                "observedValue"
+              ],
+              "properties": {
+                "specRef": {
+                  "$ref": "#/$defs/recordRef"
+                },
+                "observedValue": {},
+                "metCriterion": {
+                  "type": [
+                    "boolean",
+                    "null"
+                  ]
+                },
+                "notes": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                }
+              }
+            },
+            "metadata": {
+              "$ref": "#/$defs/systemObservedMetadata"
+            }
+          },
+          "required": [
+            "occurredAt"
+          ]
+        }
+      ],
+      "unevaluatedProperties": false
+    },
+    "outcomeObservation": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/baseRecord"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "kind": {
+              "const": "event"
+            },
+            "type": {
+              "const": "outcome_observation"
+            },
+            "payload": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "observation"
+              ],
+              "properties": {
+                "commitmentRef": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "format": "uuid"
+                },
+                "observation": {},
+                "criterionResults": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "required": [
+                      "criterionName",
+                      "observedValue"
+                    ],
+                    "properties": {
+                      "criterionName": {
+                        "$ref": "#/$defs/nonEmptyString"
+                      },
+                      "observedValue": {},
+                      "met": {
+                        "type": [
+                          "boolean",
+                          "null"
+                        ]
+                      }
+                    }
+                  }
+                },
+                "notes": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                }
+              }
+            }
+          },
+          "required": [
+            "occurredAt"
+          ]
+        }
+      ],
+      "unevaluatedProperties": false
+    },
+    "confirmationActivity": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/baseRecord"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "kind": {
+              "const": "activity"
+            },
+            "type": {
+              "const": "confirmation_activity"
+            },
+            "payload": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "usedRef",
+                "generatedRef",
+                "humanAgentRef",
+                "startedAt"
+              ],
+              "properties": {
+                "usedRef": {
+                  "$ref": "#/$defs/recordRef"
+                },
+                "generatedRef": {
+                  "$ref": "#/$defs/recordRef"
+                },
+                "humanAgentRef": {
+                  "$ref": "#/$defs/recordRef"
+                },
+                "startedAt": {
+                  "$ref": "#/$defs/dateTime"
+                },
+                "endedAt": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "format": "date-time"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "unevaluatedProperties": false
+    },
+    "decisionMakingActivity": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/baseRecord"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "kind": {
+              "const": "activity"
+            },
+            "type": {
+              "const": "decision_making_activity"
+            },
+            "payload": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "decisionPointRef",
+                "humanAgentRef",
+                "startedAt"
+              ],
+              "properties": {
+                "decisionPointRef": {
+                  "$ref": "#/$defs/recordRef"
+                },
+                "humanAgentRef": {
+                  "$ref": "#/$defs/recordRef"
+                },
+                "usedRefs": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/$defs/recordRef"
+                  },
+                  "uniqueItems": true
+                },
+                "generatedDecisionRefs": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/$defs/recordRef"
+                  },
+                  "uniqueItems": true
+                },
+                "startedAt": {
+                  "$ref": "#/$defs/dateTime"
+                },
+                "endedAt": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "format": "date-time"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "unevaluatedProperties": false
+    },
+    "executionActivity": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/baseRecord"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "kind": {
+              "const": "activity"
+            },
+            "type": {
+              "const": "execution_activity"
+            },
+            "payload": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "decisionRef",
+                "status",
+                "startedAt"
+              ],
+              "properties": {
+                "decisionRef": {
+                  "$ref": "#/$defs/recordRef"
+                },
+                "status": {
+                  "type": "string",
+                  "enum": [
+                    "started",
+                    "paused",
+                    "modified",
+                    "completed",
+                    "terminated"
+                  ]
+                },
+                "startedAt": {
+                  "$ref": "#/$defs/dateTime"
+                },
+                "endedAt": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "format": "date-time"
+                },
+                "description": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                }
+              }
+            }
+          }
+        }
+      ],
+      "unevaluatedProperties": false
+    },
+    "relationRecord": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/baseRecord"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "kind": {
+              "const": "relation"
+            },
+            "type": {
+              "const": "provenance_relation"
+            },
+            "payload": {
+              "oneOf": [
+                {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "subjectRef",
+                    "subjectKind",
+                    "predicate",
+                    "objectRef",
+                    "objectKind"
+                  ],
+                  "properties": {
+                    "subjectRef": {
+                      "$ref": "#/$defs/recordRef"
+                    },
+                    "subjectKind": {
+                      "const": "entity"
+                    },
+                    "predicate": {
+                      "const": "prov:wasDerivedFrom"
+                    },
+                    "objectRef": {
+                      "$ref": "#/$defs/recordRef"
+                    },
+                    "objectKind": {
+                      "const": "entity"
+                    }
+                  }
+                },
+                {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "subjectRef",
+                    "subjectKind",
+                    "predicate",
+                    "objectRef",
+                    "objectKind"
+                  ],
+                  "properties": {
+                    "subjectRef": {
+                      "$ref": "#/$defs/recordRef"
+                    },
+                    "subjectKind": {
+                      "const": "entity"
+                    },
+                    "predicate": {
+                      "const": "prov:wasGeneratedBy"
+                    },
+                    "objectRef": {
+                      "$ref": "#/$defs/recordRef"
+                    },
+                    "objectKind": {
+                      "const": "activity"
+                    }
+                  }
+                },
+                {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "subjectRef",
+                    "subjectKind",
+                    "predicate",
+                    "objectRef",
+                    "objectKind"
+                  ],
+                  "properties": {
+                    "subjectRef": {
+                      "$ref": "#/$defs/recordRef"
+                    },
+                    "subjectKind": {
+                      "const": "activity"
+                    },
+                    "predicate": {
+                      "const": "prov:wasAssociatedWith"
+                    },
+                    "objectRef": {
+                      "$ref": "#/$defs/recordRef"
+                    },
+                    "objectKind": {
+                      "const": "agent"
+                    }
+                  }
+                },
+                {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "subjectRef",
+                    "subjectKind",
+                    "predicate",
+                    "objectRef",
+                    "objectKind"
+                  ],
+                  "properties": {
+                    "subjectRef": {
+                      "$ref": "#/$defs/recordRef"
+                    },
+                    "subjectKind": {
+                      "const": "activity"
+                    },
+                    "predicate": {
+                      "const": "prov:used"
+                    },
+                    "objectRef": {
+                      "$ref": "#/$defs/recordRef"
+                    },
+                    "objectKind": {
+                      "const": "entity"
+                    }
+                  }
+                },
+                {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "subjectRef",
+                    "subjectKind",
+                    "predicate",
+                    "objectRef",
+                    "objectKind"
+                  ],
+                  "properties": {
+                    "subjectRef": {
+                      "$ref": "#/$defs/recordRef"
+                    },
+                    "subjectKind": {
+                      "const": "entity"
+                    },
+                    "predicate": {
+                      "const": "prov:wasInvalidatedBy"
+                    },
+                    "objectRef": {
+                      "$ref": "#/$defs/recordRef"
+                    },
+                    "objectKind": {
+                      "const": "activity"
+                    }
+                  }
+                },
+                {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "subjectRef",
+                    "subjectKind",
+                    "predicate",
+                    "objectRef",
+                    "objectKind"
+                  ],
+                  "properties": {
+                    "subjectRef": {
+                      "$ref": "#/$defs/recordRef"
+                    },
+                    "subjectKind": {
+                      "const": "entity"
+                    },
+                    "predicate": {
+                      "enum": [
+                        "ecom:supportedBy",
+                        "ecom:contradictedBy",
+                        "ecom:confirmedBy"
+                      ]
+                    },
+                    "objectRef": {
+                      "$ref": "#/$defs/recordRef"
+                    },
+                    "objectKind": {
+                      "const": "entity"
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "unevaluatedProperties": false
+    },
+    "record": {
+      "oneOf": [
+        {
+          "$ref": "#/$defs/agentRecord"
+        },
+        {
+          "$ref": "#/$defs/contextSnapshot"
+        },
+        {
+          "$ref": "#/$defs/humanStatement"
+        },
+        {
+          "$ref": "#/$defs/humanSnapshot"
+        },
+        {
+          "$ref": "#/$defs/humanInitialChoice"
+        },
+        {
+          "$ref": "#/$defs/inferredFraming"
+        },
+        {
+          "$ref": "#/$defs/prediction"
+        },
+        {
+          "$ref": "#/$defs/ecomOutput"
+        },
+        {
+          "$ref": "#/$defs/proximalOutcomeSpec"
+        },
+        {
+          "$ref": "#/$defs/humanConfirmation"
+        },
+        {
+          "$ref": "#/$defs/finalDecision"
+        },
+        {
+          "$ref": "#/$defs/outcomeProposal"
+        },
+        {
+          "$ref": "#/$defs/outcomeCommitment"
+        },
+        {
+          "$ref": "#/$defs/recallPreOutcome"
+        },
+        {
+          "$ref": "#/$defs/recallPostOutcome"
+        },
+        {
+          "$ref": "#/$defs/reflection"
+        },
+        {
+          "$ref": "#/$defs/decisionPoint"
+        },
+        {
+          "$ref": "#/$defs/interventionAssignment"
+        },
+        {
+          "$ref": "#/$defs/exposurePresented"
+        },
+        {
+          "$ref": "#/$defs/exposureAccessed"
+        },
+        {
+          "$ref": "#/$defs/exposureAcknowledged"
+        },
+        {
+          "$ref": "#/$defs/proximalOutcomeObservation"
+        },
+        {
+          "$ref": "#/$defs/outcomeObservation"
+        },
+        {
+          "$ref": "#/$defs/confirmationActivity"
+        },
+        {
+          "$ref": "#/$defs/decisionMakingActivity"
+        },
+        {
+          "$ref": "#/$defs/executionActivity"
+        },
+        {
+          "$ref": "#/$defs/relationRecord"
+        }
+      ]
+    },
+    "humanDirectMetadata": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/baseMetadata"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "source": {
+              "allOf": [
+                {
+                  "$ref": "#/$defs/sourceDescriptor"
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "kind": {
+                      "const": "human"
+                    }
+                  }
+                }
+              ]
+            },
+            "attestation": {
+              "const": "direct"
+            }
+          }
+        }
+      ]
+    },
+    "ecomDerivedMetadata": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/baseMetadata"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "source": {
+              "allOf": [
+                {
+                  "$ref": "#/$defs/sourceDescriptor"
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "kind": {
+                      "const": "ecom"
+                    }
+                  }
+                }
+              ]
+            },
+            "attestation": {
+              "const": "derived"
+            }
+          },
+          "required": [
+            "modelReportedConfidence"
+          ]
+        }
+      ]
+    },
+    "ecomAssignedMetadata": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/baseMetadata"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "source": {
+              "allOf": [
+                {
+                  "$ref": "#/$defs/sourceDescriptor"
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "kind": {
+                      "const": "ecom"
+                    }
+                  }
+                }
+              ]
+            },
+            "attestation": {
+              "const": "assigned"
+            }
+          }
+        }
+      ]
+    },
+    "ecomOutputMetadata": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/baseMetadata"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "source": {
+              "allOf": [
+                {
+                  "$ref": "#/$defs/sourceDescriptor"
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "kind": {
+                      "const": "ecom"
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "systemObservedMetadata": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/baseMetadata"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "source": {
+              "allOf": [
+                {
+                  "$ref": "#/$defs/sourceDescriptor"
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "kind": {
+                      "enum": [
+                        "system_log",
+                        "external_sensor"
+                      ]
+                    }
+                  }
+                }
+              ]
+            },
+            "attestation": {
+              "enum": [
+                "observed",
+                "system_generated"
+              ]
+            }
+          }
+        }
+      ]
+    }
+  },
+  "$comment": "Protocol invariants beyond local JSON Schema validation: persistence is append-only; referenced record IDs must exist; referenced kinds/types must match relation semantics; AI-derived records never mutate or promote human-authored records; outcome commitments must predate outcome observations; MRT eligibility and causal-analysis rules are enforced by application/database constraints."
+}

@@ -1,0 +1,4 @@
+# Convenience runtime/test entry only; follow docs/INSTALL.md for installer/build bootstrap.
+--require-hashes
+--only-binary=:all:
+-r requirements.lock

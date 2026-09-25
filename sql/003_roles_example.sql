@@ -1,0 +1,13 @@
+-- EXAMPLE ONLY. Replace credentials and ownership for the target environment.
+-- Keep role provisioning separate from ordinary migrations.
+
+-- CREATE ROLE ecom_app_writer LOGIN PASSWORD '<managed-secret>';
+-- GRANT USAGE ON SCHEMA public TO ecom_app_writer;
+-- GRANT SELECT, INSERT ON ecom_records TO ecom_app_writer;
+-- GRANT SELECT ON ecom_prov_edges TO ecom_app_writer;
+-- REVOKE UPDATE, DELETE ON ecom_records FROM ecom_app_writer;
+-- REVOKE INSERT, UPDATE, DELETE ON ecom_prov_edges FROM ecom_app_writer;
+--
+-- Because the projection trigger writes ecom_prov_edges, deployment must make
+-- the trigger function owner/security model explicit. Prefer a dedicated owner
+-- role and SECURITY DEFINER only after setting a safe search_path.

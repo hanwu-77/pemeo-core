@@ -1,0 +1,12 @@
+{
+  "name": "pemeo-core-test-tools",
+  "private": true,
+  "license": "Apache-2.0",
+  "packageManager": "pnpm@11.19.0",
+  "devDependencies": {
+    "playwright": "1.62.1"
+  },
+  "engines": {
+    "node": ">=22.13"
+  }
+}

@@ -1,0 +1,940 @@
+{
+  "files": [
+    {
+      "source": ".env.example",
+      "target": ".env.example"
+    },
+    {
+      "source": ".github/workflows/ci.yml",
+      "target": ".github/workflows/ci.yml"
+    },
+    {
+      "source": ".gitignore",
+      "target": ".gitignore"
+    },
+    {
+      "source": "AGENTS.md",
+      "target": "AGENTS.md"
+    },
+    {
+      "source": "CONTRIBUTING.md",
+      "target": "CONTRIBUTING.md"
+    },
+    {
+      "source": "LICENSE",
+      "target": "LICENSE"
+    },
+    {
+      "source": "NOTICE",
+      "target": "NOTICE"
+    },
+    {
+      "source": "PURPOSE.md",
+      "target": "PURPOSE.md"
+    },
+    {
+      "source": "README.md",
+      "target": "README.md"
+    },
+    {
+      "source": "RELEASE_READINESS.md",
+      "target": "RELEASE_READINESS.md"
+    },
+    {
+      "source": "SECURITY.md",
+      "target": "SECURITY.md"
+    },
+    {
+      "source": "THIRD_PARTY_NOTICES.md",
+      "target": "THIRD_PARTY_NOTICES.md"
+    },
+    {
+      "source": "docker-compose.i2.yml",
+      "target": "docker-compose.i2.yml"
+    },
+    {
+      "source": "docker-compose.yml",
+      "target": "docker-compose.yml"
+    },
+    {
+      "source": "docs/ARCHITECTURE.md",
+      "target": "docs/ARCHITECTURE.md"
+    },
+    {
+      "source": "docs/BRAND_NARRATIVE.md",
+      "target": "docs/BRAND_NARRATIVE.md"
+    },
+    {
+      "source": "docs/DEPENDENCY_INTEGRITY.md",
+      "target": "docs/DEPENDENCY_INTEGRITY.md"
+    },
+    {
+      "source": "docs/DISTRIBUTION_LICENSE_REVIEW.md",
+      "target": "docs/DISTRIBUTION_LICENSE_REVIEW.md"
+    },
+    {
+      "source": "docs/INSTALL.md",
+      "target": "docs/INSTALL.md"
+    },
+    {
+      "source": "docs/KNOWN_LIMITATIONS.md",
+      "target": "docs/KNOWN_LIMITATIONS.md"
+    },
+    {
+      "source": "docs/LANGUAGE_POLICY.md",
+      "target": "docs/LANGUAGE_POLICY.md"
+    },
+    {
+      "source": "docs/VALIDATION.md",
+      "target": "docs/VALIDATION.md"
+    },
+    {
+      "source": "docs/brand/language-selection-data.json",
+      "target": "docs/brand/language-selection-data.json"
+    },
+    {
+      "source": "docs/brand/locales.json",
+      "target": "docs/brand/locales.json"
+    },
+    {
+      "source": "docs/i18n/ar.md",
+      "target": "docs/i18n/ar.md"
+    },
+    {
+      "source": "docs/i18n/bn.md",
+      "target": "docs/i18n/bn.md"
+    },
+    {
+      "source": "docs/i18n/de.md",
+      "target": "docs/i18n/de.md"
+    },
+    {
+      "source": "docs/i18n/en.md",
+      "target": "docs/i18n/en.md"
+    },
+    {
+      "source": "docs/i18n/es.md",
+      "target": "docs/i18n/es.md"
+    },
+    {
+      "source": "docs/i18n/fr.md",
+      "target": "docs/i18n/fr.md"
+    },
+    {
+      "source": "docs/i18n/hi.md",
+      "target": "docs/i18n/hi.md"
+    },
+    {
+      "source": "docs/i18n/id.md",
+      "target": "docs/i18n/id.md"
+    },
+    {
+      "source": "docs/i18n/ms.md",
+      "target": "docs/i18n/ms.md"
+    },
+    {
+      "source": "docs/i18n/pt.md",
+      "target": "docs/i18n/pt.md"
+    },
+    {
+      "source": "docs/i18n/ru.md",
+      "target": "docs/i18n/ru.md"
+    },
+    {
+      "source": "docs/i18n/zh-CN.md",
+      "target": "docs/i18n/zh-CN.md"
+    },
+    {
+      "source": "package.json",
+      "target": "package.json"
+    },
+    {
+      "source": "pnpm-lock.yaml",
+      "target": "pnpm-lock.yaml"
+    },
+    {
+      "source": "protocol/ecom_protocol_v0.1.example.json",
+      "target": "protocol/ecom_protocol_v0.1.example.json"
+    },
+    {
+      "source": "protocol/ecom_protocol_v0.1.schema.json",
+      "target": "protocol/ecom_protocol_v0.1.schema.json"
+    },
+    {
+      "source": "pyproject.toml",
+      "target": "pyproject.toml"
+    },
+    {
+      "source": "release/export_source.py",
+      "target": "release/export_source.py"
+    },
+    {
+      "source": "release/pnpm-artifact.json",
+      "target": "release/pnpm-artifact.json"
+    },
+    {
+      "source": "release/pnpm/package-lock.json",
+      "target": "release/pnpm/package-lock.json"
+    },
+    {
+      "source": "release/pnpm/package.json",
+      "target": "release/pnpm/package.json"
+    },
+    {
+      "source": "release/public-files.json",
+      "target": "release/public-files.json"
+    },
+    {
+      "source": "release/python-artifacts.json",
+      "target": "release/python-artifacts.json"
+    },
+    {
+      "source": "release/test_dependency_install.py",
+      "target": "release/test_dependency_install.py"
+    },
+    {
+      "source": "release/test_export_source.py",
+      "target": "release/test_export_source.py"
+    },
+    {
+      "source": "requirements-bootstrap.lock",
+      "target": "requirements-bootstrap.lock"
+    },
+    {
+      "source": "requirements-build.lock",
+      "target": "requirements-build.lock"
+    },
+    {
+      "source": "requirements.lock",
+      "target": "requirements.lock"
+    },
+    {
+      "source": "requirements.txt",
+      "target": "requirements.txt"
+    },
+    {
+      "source": "scripts/foundation.py",
+      "target": "scripts/foundation.py"
+    },
+    {
+      "source": "scripts/i2_demo.py",
+      "target": "scripts/i2_demo.py"
+    },
+    {
+      "source": "scripts/ingestion_setup.py",
+      "target": "scripts/ingestion_setup.py"
+    },
+    {
+      "source": "scripts/test_postgres.py",
+      "target": "scripts/test_postgres.py"
+    },
+    {
+      "source": "scripts/webauthn_setup.py",
+      "target": "scripts/webauthn_setup.py"
+    },
+    {
+      "source": "sql/001_init.sql",
+      "target": "sql/001_init.sql"
+    },
+    {
+      "source": "sql/002_projection_rebuild.sql",
+      "target": "sql/002_projection_rebuild.sql"
+    },
+    {
+      "source": "sql/003_roles_example.sql",
+      "target": "sql/003_roles_example.sql"
+    },
+    {
+      "source": "sql/004_foundation_roles.sql",
+      "target": "sql/004_foundation_roles.sql"
+    },
+    {
+      "source": "sql/005_guarded_projection_rebuild.sql",
+      "target": "sql/005_guarded_projection_rebuild.sql"
+    },
+    {
+      "source": "sql/006_ingestion.sql",
+      "target": "sql/006_ingestion.sql"
+    },
+    {
+      "source": "sql/007_webauthn.sql",
+      "target": "sql/007_webauthn.sql"
+    },
+    {
+      "source": "src/ecom_backend/__init__.py",
+      "target": "src/ecom_backend/__init__.py"
+    },
+    {
+      "source": "src/ecom_backend/cli.py",
+      "target": "src/ecom_backend/cli.py"
+    },
+    {
+      "source": "src/ecom_backend/db_models.py",
+      "target": "src/ecom_backend/db_models.py"
+    },
+    {
+      "source": "src/ecom_backend/errors.py",
+      "target": "src/ecom_backend/errors.py"
+    },
+    {
+      "source": "src/ecom_backend/identity_http.py",
+      "target": "src/ecom_backend/identity_http.py"
+    },
+    {
+      "source": "src/ecom_backend/ingestion.py",
+      "target": "src/ecom_backend/ingestion.py"
+    },
+    {
+      "source": "src/ecom_backend/ingestion_json.py",
+      "target": "src/ecom_backend/ingestion_json.py"
+    },
+    {
+      "source": "src/ecom_backend/invariants.py",
+      "target": "src/ecom_backend/invariants.py"
+    },
+    {
+      "source": "src/ecom_backend/models.py",
+      "target": "src/ecom_backend/models.py"
+    },
+    {
+      "source": "src/ecom_backend/purpose.py",
+      "target": "src/ecom_backend/purpose.py"
+    },
+    {
+      "source": "src/ecom_backend/registry.py",
+      "target": "src/ecom_backend/registry.py"
+    },
+    {
+      "source": "src/ecom_backend/schema_validation.py",
+      "target": "src/ecom_backend/schema_validation.py"
+    },
+    {
+      "source": "src/ecom_backend/service.py",
+      "target": "src/ecom_backend/service.py"
+    },
+    {
+      "source": "src/ecom_backend/store.py",
+      "target": "src/ecom_backend/store.py"
+    },
+    {
+      "source": "src/ecom_backend/webauthn_adapter.py",
+      "target": "src/ecom_backend/webauthn_adapter.py"
+    },
+    {
+      "source": "src/ecom_backend/webauthn_service.py",
+      "target": "src/ecom_backend/webauthn_service.py"
+    },
+    {
+      "source": "tests/browser_i2.cjs",
+      "target": "tests/browser_i2.cjs"
+    },
+    {
+      "source": "tests/conftest.py",
+      "target": "tests/conftest.py"
+    },
+    {
+      "source": "tests/test_business_invariants.py",
+      "target": "tests/test_business_invariants.py"
+    },
+    {
+      "source": "tests/test_foundation_postgres.py",
+      "target": "tests/test_foundation_postgres.py"
+    },
+    {
+      "source": "tests/test_i2_review_hardening.py",
+      "target": "tests/test_i2_review_hardening.py"
+    },
+    {
+      "source": "tests/test_i2_review_postgres.py",
+      "target": "tests/test_i2_review_postgres.py"
+    },
+    {
+      "source": "tests/test_identity_browser.py",
+      "target": "tests/test_identity_browser.py"
+    },
+    {
+      "source": "tests/test_identity_http.py",
+      "target": "tests/test_identity_http.py"
+    },
+    {
+      "source": "tests/test_ingestion_json.py",
+      "target": "tests/test_ingestion_json.py"
+    },
+    {
+      "source": "tests/test_ingestion_postgres.py",
+      "target": "tests/test_ingestion_postgres.py"
+    },
+    {
+      "source": "tests/test_postgres_integration.py",
+      "target": "tests/test_postgres_integration.py"
+    },
+    {
+      "source": "tests/test_project_isolation.py",
+      "target": "tests/test_project_isolation.py"
+    },
+    {
+      "source": "tests/test_protocol_registry_consistency.py",
+      "target": "tests/test_protocol_registry_consistency.py"
+    },
+    {
+      "source": "tests/test_registry_fail_closed.py",
+      "target": "tests/test_registry_fail_closed.py"
+    },
+    {
+      "source": "tests/test_schema_and_canonical.py",
+      "target": "tests/test_schema_and_canonical.py"
+    },
+    {
+      "source": "tests/test_service_error_classification.py",
+      "target": "tests/test_service_error_classification.py"
+    },
+    {
+      "source": "tests/test_webauthn_adapter.py",
+      "target": "tests/test_webauthn_adapter.py"
+    },
+    {
+      "source": "tests/test_webauthn_postgres.py",
+      "target": "tests/test_webauthn_postgres.py"
+    },
+    {
+      "source": "tests/webauthn_fixtures.py",
+      "target": "tests/webauthn_fixtures.py"
+    },
+    {
+      "source": "third_party/DEPENDENCIES.json",
+      "target": "third_party/DEPENDENCIES.json"
+    },
+    {
+      "source": "third_party/TOOLS.json",
+      "target": "third_party/TOOLS.json"
+    },
+    {
+      "source": "third_party/licenses/GPL-3.0.txt",
+      "target": "third_party/licenses/GPL-3.0.txt"
+    },
+    {
+      "source": "third_party/licenses/Pygments/AUTHORS",
+      "target": "third_party/licenses/Pygments/AUTHORS"
+    },
+    {
+      "source": "third_party/licenses/Pygments/LICENSE",
+      "target": "third_party/licenses/Pygments/LICENSE"
+    },
+    {
+      "source": "third_party/licenses/SQLAlchemy/AUTHORS",
+      "target": "third_party/licenses/SQLAlchemy/AUTHORS"
+    },
+    {
+      "source": "third_party/licenses/SQLAlchemy/LICENSE",
+      "target": "third_party/licenses/SQLAlchemy/LICENSE"
+    },
+    {
+      "source": "third_party/licenses/annotated-types/LICENSE",
+      "target": "third_party/licenses/annotated-types/LICENSE"
+    },
+    {
+      "source": "third_party/licenses/attrs/LICENSE",
+      "target": "third_party/licenses/attrs/LICENSE"
+    },
+    {
+      "source": "third_party/licenses/cbor2/LICENSE.txt",
+      "target": "third_party/licenses/cbor2/LICENSE.txt"
+    },
+    {
+      "source": "third_party/licenses/cffi/LICENSE",
+      "target": "third_party/licenses/cffi/LICENSE"
+    },
+    {
+      "source": "third_party/licenses/cryptography/LICENSE",
+      "target": "third_party/licenses/cryptography/LICENSE"
+    },
+    {
+      "source": "third_party/licenses/cryptography/LICENSE.APACHE",
+      "target": "third_party/licenses/cryptography/LICENSE.APACHE"
+    },
+    {
+      "source": "third_party/licenses/cryptography/LICENSE.BSD",
+      "target": "third_party/licenses/cryptography/LICENSE.BSD"
+    },
+    {
+      "source": "third_party/licenses/greenlet/wheel-members/greenlet-3.5.6.dist-info/licenses/LICENSE",
+      "target": "third_party/licenses/greenlet/wheel-members/greenlet-3.5.6.dist-info/licenses/LICENSE"
+    },
+    {
+      "source": "third_party/licenses/greenlet/wheel-members/greenlet-3.5.6.dist-info/licenses/LICENSE.PSF",
+      "target": "third_party/licenses/greenlet/wheel-members/greenlet-3.5.6.dist-info/licenses/LICENSE.PSF"
+    },
+    {
+      "source": "third_party/licenses/iniconfig/LICENSE",
+      "target": "third_party/licenses/iniconfig/LICENSE"
+    },
+    {
+      "source": "third_party/licenses/jsonschema-specifications/COPYING",
+      "target": "third_party/licenses/jsonschema-specifications/COPYING"
+    },
+    {
+      "source": "third_party/licenses/jsonschema/COPYING",
+      "target": "third_party/licenses/jsonschema/COPYING"
+    },
+    {
+      "source": "third_party/licenses/packaging/LICENSE",
+      "target": "third_party/licenses/packaging/LICENSE"
+    },
+    {
+      "source": "third_party/licenses/packaging/LICENSE.APACHE",
+      "target": "third_party/licenses/packaging/LICENSE.APACHE"
+    },
+    {
+      "source": "third_party/licenses/packaging/LICENSE.BSD",
+      "target": "third_party/licenses/packaging/LICENSE.BSD"
+    },
+    {
+      "source": "third_party/licenses/pip/wheel-members/pip-26.2.dist-info/licenses/AUTHORS.txt",
+      "target": "third_party/licenses/pip/wheel-members/pip-26.2.dist-info/licenses/AUTHORS.txt"
+    },
+    {
+      "source": "third_party/licenses/pip/wheel-members/pip-26.2.dist-info/licenses/LICENSE.txt",
+      "target": "third_party/licenses/pip/wheel-members/pip-26.2.dist-info/licenses/LICENSE.txt"
+    },
+    {
+      "source": "third_party/licenses/pip/wheel-members/pip-26.2.dist-info/licenses/src/pip/_vendor/cachecontrol/LICENSE.txt",
+      "target": "third_party/licenses/pip/wheel-members/pip-26.2.dist-info/licenses/src/pip/_vendor/cachecontrol/LICENSE.txt"
+    },
+    {
+      "source": "third_party/licenses/pip/wheel-members/pip-26.2.dist-info/licenses/src/pip/_vendor/certifi/LICENSE",
+      "target": "third_party/licenses/pip/wheel-members/pip-26.2.dist-info/licenses/src/pip/_vendor/certifi/LICENSE"
+    },
+    {
+      "source": "third_party/licenses/pip/wheel-members/pip-26.2.dist-info/licenses/src/pip/_vendor/distlib/LICENSE.txt",
+      "target": "third_party/licenses/pip/wheel-members/pip-26.2.dist-info/licenses/src/pip/_vendor/distlib/LICENSE.txt"
+    },
+    {
+      "source": "third_party/licenses/pip/wheel-members/pip-26.2.dist-info/licenses/src/pip/_vendor/distro/LICENSE",
+      "target": "third_party/licenses/pip/wheel-members/pip-26.2.dist-info/licenses/src/pip/_vendor/distro/LICENSE"
+    },
+    {
+      "source": "third_party/licenses/pip/wheel-members/pip-26.2.dist-info/licenses/src/pip/_vendor/idna/LICENSE.md",
+      "target": "third_party/licenses/pip/wheel-members/pip-26.2.dist-info/licenses/src/pip/_vendor/idna/LICENSE.md"
+    },
+    {
+      "source": "third_party/licenses/pip/wheel-members/pip-26.2.dist-info/licenses/src/pip/_vendor/msgpack/COPYING",
+      "target": "third_party/licenses/pip/wheel-members/pip-26.2.dist-info/licenses/src/pip/_vendor/msgpack/COPYING"
+    },
+    {
+      "source": "third_party/licenses/pip/wheel-members/pip-26.2.dist-info/licenses/src/pip/_vendor/packaging/LICENSE",
+      "target": "third_party/licenses/pip/wheel-members/pip-26.2.dist-info/licenses/src/pip/_vendor/packaging/LICENSE"
+    },
+    {
+      "source": "third_party/licenses/pip/wheel-members/pip-26.2.dist-info/licenses/src/pip/_vendor/packaging/LICENSE.APACHE",
+      "target": "third_party/licenses/pip/wheel-members/pip-26.2.dist-info/licenses/src/pip/_vendor/packaging/LICENSE.APACHE"
+    },
+    {
+      "source": "third_party/licenses/pip/wheel-members/pip-26.2.dist-info/licenses/src/pip/_vendor/packaging/LICENSE.BSD",
+      "target": "third_party/licenses/pip/wheel-members/pip-26.2.dist-info/licenses/src/pip/_vendor/packaging/LICENSE.BSD"
+    },
+    {
+      "source": "third_party/licenses/pip/wheel-members/pip-26.2.dist-info/licenses/src/pip/_vendor/pkg_resources/LICENSE",
+      "target": "third_party/licenses/pip/wheel-members/pip-26.2.dist-info/licenses/src/pip/_vendor/pkg_resources/LICENSE"
+    },
+    {
+      "source": "third_party/licenses/pip/wheel-members/pip-26.2.dist-info/licenses/src/pip/_vendor/platformdirs/LICENSE",
+      "target": "third_party/licenses/pip/wheel-members/pip-26.2.dist-info/licenses/src/pip/_vendor/platformdirs/LICENSE"
+    },
+    {
+      "source": "third_party/licenses/pip/wheel-members/pip-26.2.dist-info/licenses/src/pip/_vendor/pygments/LICENSE",
+      "target": "third_party/licenses/pip/wheel-members/pip-26.2.dist-info/licenses/src/pip/_vendor/pygments/LICENSE"
+    },
+    {
+      "source": "third_party/licenses/pip/wheel-members/pip-26.2.dist-info/licenses/src/pip/_vendor/pyproject_hooks/LICENSE",
+      "target": "third_party/licenses/pip/wheel-members/pip-26.2.dist-info/licenses/src/pip/_vendor/pyproject_hooks/LICENSE"
+    },
+    {
+      "source": "third_party/licenses/pip/wheel-members/pip-26.2.dist-info/licenses/src/pip/_vendor/requests/LICENSE",
+      "target": "third_party/licenses/pip/wheel-members/pip-26.2.dist-info/licenses/src/pip/_vendor/requests/LICENSE"
+    },
+    {
+      "source": "third_party/licenses/pip/wheel-members/pip-26.2.dist-info/licenses/src/pip/_vendor/resolvelib/LICENSE",
+      "target": "third_party/licenses/pip/wheel-members/pip-26.2.dist-info/licenses/src/pip/_vendor/resolvelib/LICENSE"
+    },
+    {
+      "source": "third_party/licenses/pip/wheel-members/pip-26.2.dist-info/licenses/src/pip/_vendor/rich/LICENSE",
+      "target": "third_party/licenses/pip/wheel-members/pip-26.2.dist-info/licenses/src/pip/_vendor/rich/LICENSE"
+    },
+    {
+      "source": "third_party/licenses/pip/wheel-members/pip-26.2.dist-info/licenses/src/pip/_vendor/tomli/LICENSE",
+      "target": "third_party/licenses/pip/wheel-members/pip-26.2.dist-info/licenses/src/pip/_vendor/tomli/LICENSE"
+    },
+    {
+      "source": "third_party/licenses/pip/wheel-members/pip-26.2.dist-info/licenses/src/pip/_vendor/tomli_w/LICENSE",
+      "target": "third_party/licenses/pip/wheel-members/pip-26.2.dist-info/licenses/src/pip/_vendor/tomli_w/LICENSE"
+    },
+    {
+      "source": "third_party/licenses/pip/wheel-members/pip-26.2.dist-info/licenses/src/pip/_vendor/truststore/LICENSE",
+      "target": "third_party/licenses/pip/wheel-members/pip-26.2.dist-info/licenses/src/pip/_vendor/truststore/LICENSE"
+    },
+    {
+      "source": "third_party/licenses/pip/wheel-members/pip-26.2.dist-info/licenses/src/pip/_vendor/urllib3/LICENSE.txt",
+      "target": "third_party/licenses/pip/wheel-members/pip-26.2.dist-info/licenses/src/pip/_vendor/urllib3/LICENSE.txt"
+    },
+    {
+      "source": "third_party/licenses/playwright-core/LICENSE",
+      "target": "third_party/licenses/playwright-core/LICENSE"
+    },
+    {
+      "source": "third_party/licenses/playwright-core/NOTICE",
+      "target": "third_party/licenses/playwright-core/NOTICE"
+    },
+    {
+      "source": "third_party/licenses/playwright-core/ThirdPartyNotices.txt",
+      "target": "third_party/licenses/playwright-core/ThirdPartyNotices.txt"
+    },
+    {
+      "source": "third_party/licenses/playwright/LICENSE",
+      "target": "third_party/licenses/playwright/LICENSE"
+    },
+    {
+      "source": "third_party/licenses/playwright/NOTICE",
+      "target": "third_party/licenses/playwright/NOTICE"
+    },
+    {
+      "source": "third_party/licenses/playwright/ThirdPartyNotices.txt",
+      "target": "third_party/licenses/playwright/ThirdPartyNotices.txt"
+    },
+    {
+      "source": "third_party/licenses/pluggy/LICENSE",
+      "target": "third_party/licenses/pluggy/LICENSE"
+    },
+    {
+      "source": "third_party/licenses/pnpm/encoded-members/package%2FLICENSE",
+      "target": "third_party/licenses/pnpm/encoded-members/package%2FLICENSE"
+    },
+    {
+      "source": "third_party/licenses/pnpm/encoded-members/package%2Fartifacts%2Fexe%2Fdist%2Fnode_modules%2F%40isaacs%2Ffs-minipass%2FLICENSE",
+      "target": "third_party/licenses/pnpm/encoded-members/package%2Fartifacts%2Fexe%2Fdist%2Fnode_modules%2F%40isaacs%2Ffs-minipass%2FLICENSE"
+    },
+    {
+      "source": "third_party/licenses/pnpm/encoded-members/package%2Fartifacts%2Fexe%2Fdist%2Fnode_modules%2Fabbrev%2FLICENSE",
+      "target": "third_party/licenses/pnpm/encoded-members/package%2Fartifacts%2Fexe%2Fdist%2Fnode_modules%2Fabbrev%2FLICENSE"
+    },
+    {
+      "source": "third_party/licenses/pnpm/encoded-members/package%2Fartifacts%2Fexe%2Fdist%2Fnode_modules%2Fenv-paths%2Flicense",
+      "target": "third_party/licenses/pnpm/encoded-members/package%2Fartifacts%2Fexe%2Fdist%2Fnode_modules%2Fenv-paths%2Flicense"
+    },
+    {
+      "source": "third_party/licenses/pnpm/encoded-members/package%2Fartifacts%2Fexe%2Fdist%2Fnode_modules%2Fexponential-backoff%2FLICENSE",
+      "target": "third_party/licenses/pnpm/encoded-members/package%2Fartifacts%2Fexe%2Fdist%2Fnode_modules%2Fexponential-backoff%2FLICENSE"
+    },
+    {
+      "source": "third_party/licenses/pnpm/encoded-members/package%2Fartifacts%2Fexe%2Fdist%2Fnode_modules%2Ffdir%2FLICENSE",
+      "target": "third_party/licenses/pnpm/encoded-members/package%2Fartifacts%2Fexe%2Fdist%2Fnode_modules%2Ffdir%2FLICENSE"
+    },
+    {
+      "source": "third_party/licenses/pnpm/encoded-members/package%2Fartifacts%2Fexe%2Fdist%2Fnode_modules%2Fgraceful-fs%2FLICENSE",
+      "target": "third_party/licenses/pnpm/encoded-members/package%2Fartifacts%2Fexe%2Fdist%2Fnode_modules%2Fgraceful-fs%2FLICENSE"
+    },
+    {
+      "source": "third_party/licenses/pnpm/encoded-members/package%2Fartifacts%2Fexe%2Fdist%2Fnode_modules%2Fminizlib%2FLICENSE",
+      "target": "third_party/licenses/pnpm/encoded-members/package%2Fartifacts%2Fexe%2Fdist%2Fnode_modules%2Fminizlib%2FLICENSE"
+    },
+    {
+      "source": "third_party/licenses/pnpm/encoded-members/package%2Fartifacts%2Fexe%2Fdist%2Fnode_modules%2Fnode-gyp%2FLICENSE",
+      "target": "third_party/licenses/pnpm/encoded-members/package%2Fartifacts%2Fexe%2Fdist%2Fnode_modules%2Fnode-gyp%2FLICENSE"
+    },
+    {
+      "source": "third_party/licenses/pnpm/encoded-members/package%2Fartifacts%2Fexe%2Fdist%2Fnode_modules%2Fnode-gyp%2Fgyp%2FLICENSE",
+      "target": "third_party/licenses/pnpm/encoded-members/package%2Fartifacts%2Fexe%2Fdist%2Fnode_modules%2Fnode-gyp%2Fgyp%2FLICENSE"
+    },
+    {
+      "source": "third_party/licenses/pnpm/encoded-members/package%2Fartifacts%2Fexe%2Fdist%2Fnode_modules%2Fnode-gyp%2Fgyp%2Fpylib%2Fpackaging%2FLICENSE",
+      "target": "third_party/licenses/pnpm/encoded-members/package%2Fartifacts%2Fexe%2Fdist%2Fnode_modules%2Fnode-gyp%2Fgyp%2Fpylib%2Fpackaging%2FLICENSE"
+    },
+    {
+      "source": "third_party/licenses/pnpm/encoded-members/package%2Fartifacts%2Fexe%2Fdist%2Fnode_modules%2Fnode-gyp%2Fgyp%2Fpylib%2Fpackaging%2FLICENSE.APACHE",
+      "target": "third_party/licenses/pnpm/encoded-members/package%2Fartifacts%2Fexe%2Fdist%2Fnode_modules%2Fnode-gyp%2Fgyp%2Fpylib%2Fpackaging%2FLICENSE.APACHE"
+    },
+    {
+      "source": "third_party/licenses/pnpm/encoded-members/package%2Fartifacts%2Fexe%2Fdist%2Fnode_modules%2Fnode-gyp%2Fgyp%2Fpylib%2Fpackaging%2FLICENSE.BSD",
+      "target": "third_party/licenses/pnpm/encoded-members/package%2Fartifacts%2Fexe%2Fdist%2Fnode_modules%2Fnode-gyp%2Fgyp%2Fpylib%2Fpackaging%2FLICENSE.BSD"
+    },
+    {
+      "source": "third_party/licenses/pnpm/encoded-members/package%2Fartifacts%2Fexe%2Fdist%2Fnode_modules%2Fnopt%2FLICENSE",
+      "target": "third_party/licenses/pnpm/encoded-members/package%2Fartifacts%2Fexe%2Fdist%2Fnode_modules%2Fnopt%2FLICENSE"
+    },
+    {
+      "source": "third_party/licenses/pnpm/encoded-members/package%2Fartifacts%2Fexe%2Fdist%2Fnode_modules%2Fpicomatch%2FLICENSE",
+      "target": "third_party/licenses/pnpm/encoded-members/package%2Fartifacts%2Fexe%2Fdist%2Fnode_modules%2Fpicomatch%2FLICENSE"
+    },
+    {
+      "source": "third_party/licenses/pnpm/encoded-members/package%2Fartifacts%2Fexe%2Fdist%2Fnode_modules%2Fproc-log%2FLICENSE",
+      "target": "third_party/licenses/pnpm/encoded-members/package%2Fartifacts%2Fexe%2Fdist%2Fnode_modules%2Fproc-log%2FLICENSE"
+    },
+    {
+      "source": "third_party/licenses/pnpm/encoded-members/package%2Fartifacts%2Fexe%2Fdist%2Fnode_modules%2Fsemver%2FLICENSE",
+      "target": "third_party/licenses/pnpm/encoded-members/package%2Fartifacts%2Fexe%2Fdist%2Fnode_modules%2Fsemver%2FLICENSE"
+    },
+    {
+      "source": "third_party/licenses/pnpm/encoded-members/package%2Fartifacts%2Fexe%2Fdist%2Fnode_modules%2Ftinyglobby%2FLICENSE",
+      "target": "third_party/licenses/pnpm/encoded-members/package%2Fartifacts%2Fexe%2Fdist%2Fnode_modules%2Ftinyglobby%2FLICENSE"
+    },
+    {
+      "source": "third_party/licenses/pnpm/encoded-members/package%2Fartifacts%2Fexe%2Fdist%2Fnode_modules%2Fundici%2FLICENSE",
+      "target": "third_party/licenses/pnpm/encoded-members/package%2Fartifacts%2Fexe%2Fdist%2Fnode_modules%2Fundici%2FLICENSE"
+    },
+    {
+      "source": "third_party/licenses/pnpm/encoded-members/package%2Fartifacts%2Fexe%2Fdist%2Fnode_modules%2Fundici%2Flib%2Fweb%2Ffetch%2FLICENSE",
+      "target": "third_party/licenses/pnpm/encoded-members/package%2Fartifacts%2Fexe%2Fdist%2Fnode_modules%2Fundici%2Flib%2Fweb%2Ffetch%2FLICENSE"
+    },
+    {
+      "source": "third_party/licenses/pnpm/encoded-members/package%2Fartifacts%2Fexe%2Fdist%2Fnode_modules%2Fv8-compile-cache%2FLICENSE",
+      "target": "third_party/licenses/pnpm/encoded-members/package%2Fartifacts%2Fexe%2Fdist%2Fnode_modules%2Fv8-compile-cache%2FLICENSE"
+    },
+    {
+      "source": "third_party/licenses/pnpm/encoded-members/package%2Fartifacts%2Fexe%2Fdist%2Fnode_modules%2Fwhich%2FLICENSE",
+      "target": "third_party/licenses/pnpm/encoded-members/package%2Fartifacts%2Fexe%2Fdist%2Fnode_modules%2Fwhich%2FLICENSE"
+    },
+    {
+      "source": "third_party/licenses/pnpm/encoded-members/package%2Fdist%2Fnode_modules%2F%40isaacs%2Ffs-minipass%2FLICENSE",
+      "target": "third_party/licenses/pnpm/encoded-members/package%2Fdist%2Fnode_modules%2F%40isaacs%2Ffs-minipass%2FLICENSE"
+    },
+    {
+      "source": "third_party/licenses/pnpm/encoded-members/package%2Fdist%2Fnode_modules%2Fabbrev%2FLICENSE",
+      "target": "third_party/licenses/pnpm/encoded-members/package%2Fdist%2Fnode_modules%2Fabbrev%2FLICENSE"
+    },
+    {
+      "source": "third_party/licenses/pnpm/encoded-members/package%2Fdist%2Fnode_modules%2Fenv-paths%2Flicense",
+      "target": "third_party/licenses/pnpm/encoded-members/package%2Fdist%2Fnode_modules%2Fenv-paths%2Flicense"
+    },
+    {
+      "source": "third_party/licenses/pnpm/encoded-members/package%2Fdist%2Fnode_modules%2Fexponential-backoff%2FLICENSE",
+      "target": "third_party/licenses/pnpm/encoded-members/package%2Fdist%2Fnode_modules%2Fexponential-backoff%2FLICENSE"
+    },
+    {
+      "source": "third_party/licenses/pnpm/encoded-members/package%2Fdist%2Fnode_modules%2Ffdir%2FLICENSE",
+      "target": "third_party/licenses/pnpm/encoded-members/package%2Fdist%2Fnode_modules%2Ffdir%2FLICENSE"
+    },
+    {
+      "source": "third_party/licenses/pnpm/encoded-members/package%2Fdist%2Fnode_modules%2Fgraceful-fs%2FLICENSE",
+      "target": "third_party/licenses/pnpm/encoded-members/package%2Fdist%2Fnode_modules%2Fgraceful-fs%2FLICENSE"
+    },
+    {
+      "source": "third_party/licenses/pnpm/encoded-members/package%2Fdist%2Fnode_modules%2Fminizlib%2FLICENSE",
+      "target": "third_party/licenses/pnpm/encoded-members/package%2Fdist%2Fnode_modules%2Fminizlib%2FLICENSE"
+    },
+    {
+      "source": "third_party/licenses/pnpm/encoded-members/package%2Fdist%2Fnode_modules%2Fnode-gyp%2FLICENSE",
+      "target": "third_party/licenses/pnpm/encoded-members/package%2Fdist%2Fnode_modules%2Fnode-gyp%2FLICENSE"
+    },
+    {
+      "source": "third_party/licenses/pnpm/encoded-members/package%2Fdist%2Fnode_modules%2Fnode-gyp%2Fgyp%2FLICENSE",
+      "target": "third_party/licenses/pnpm/encoded-members/package%2Fdist%2Fnode_modules%2Fnode-gyp%2Fgyp%2FLICENSE"
+    },
+    {
+      "source": "third_party/licenses/pnpm/encoded-members/package%2Fdist%2Fnode_modules%2Fnode-gyp%2Fgyp%2Fpylib%2Fpackaging%2FLICENSE",
+      "target": "third_party/licenses/pnpm/encoded-members/package%2Fdist%2Fnode_modules%2Fnode-gyp%2Fgyp%2Fpylib%2Fpackaging%2FLICENSE"
+    },
+    {
+      "source": "third_party/licenses/pnpm/encoded-members/package%2Fdist%2Fnode_modules%2Fnode-gyp%2Fgyp%2Fpylib%2Fpackaging%2FLICENSE.APACHE",
+      "target": "third_party/licenses/pnpm/encoded-members/package%2Fdist%2Fnode_modules%2Fnode-gyp%2Fgyp%2Fpylib%2Fpackaging%2FLICENSE.APACHE"
+    },
+    {
+      "source": "third_party/licenses/pnpm/encoded-members/package%2Fdist%2Fnode_modules%2Fnode-gyp%2Fgyp%2Fpylib%2Fpackaging%2FLICENSE.BSD",
+      "target": "third_party/licenses/pnpm/encoded-members/package%2Fdist%2Fnode_modules%2Fnode-gyp%2Fgyp%2Fpylib%2Fpackaging%2FLICENSE.BSD"
+    },
+    {
+      "source": "third_party/licenses/pnpm/encoded-members/package%2Fdist%2Fnode_modules%2Fnopt%2FLICENSE",
+      "target": "third_party/licenses/pnpm/encoded-members/package%2Fdist%2Fnode_modules%2Fnopt%2FLICENSE"
+    },
+    {
+      "source": "third_party/licenses/pnpm/encoded-members/package%2Fdist%2Fnode_modules%2Fpicomatch%2FLICENSE",
+      "target": "third_party/licenses/pnpm/encoded-members/package%2Fdist%2Fnode_modules%2Fpicomatch%2FLICENSE"
+    },
+    {
+      "source": "third_party/licenses/pnpm/encoded-members/package%2Fdist%2Fnode_modules%2Fproc-log%2FLICENSE",
+      "target": "third_party/licenses/pnpm/encoded-members/package%2Fdist%2Fnode_modules%2Fproc-log%2FLICENSE"
+    },
+    {
+      "source": "third_party/licenses/pnpm/encoded-members/package%2Fdist%2Fnode_modules%2Fsemver%2FLICENSE",
+      "target": "third_party/licenses/pnpm/encoded-members/package%2Fdist%2Fnode_modules%2Fsemver%2FLICENSE"
+    },
+    {
+      "source": "third_party/licenses/pnpm/encoded-members/package%2Fdist%2Fnode_modules%2Ftinyglobby%2FLICENSE",
+      "target": "third_party/licenses/pnpm/encoded-members/package%2Fdist%2Fnode_modules%2Ftinyglobby%2FLICENSE"
+    },
+    {
+      "source": "third_party/licenses/pnpm/encoded-members/package%2Fdist%2Fnode_modules%2Fundici%2FLICENSE",
+      "target": "third_party/licenses/pnpm/encoded-members/package%2Fdist%2Fnode_modules%2Fundici%2FLICENSE"
+    },
+    {
+      "source": "third_party/licenses/pnpm/encoded-members/package%2Fdist%2Fnode_modules%2Fundici%2Flib%2Fweb%2Ffetch%2FLICENSE",
+      "target": "third_party/licenses/pnpm/encoded-members/package%2Fdist%2Fnode_modules%2Fundici%2Flib%2Fweb%2Ffetch%2FLICENSE"
+    },
+    {
+      "source": "third_party/licenses/pnpm/encoded-members/package%2Fdist%2Fnode_modules%2Fv8-compile-cache%2FLICENSE",
+      "target": "third_party/licenses/pnpm/encoded-members/package%2Fdist%2Fnode_modules%2Fv8-compile-cache%2FLICENSE"
+    },
+    {
+      "source": "third_party/licenses/pnpm/encoded-members/package%2Fdist%2Fnode_modules%2Fwhich%2FLICENSE",
+      "target": "third_party/licenses/pnpm/encoded-members/package%2Fdist%2Fnode_modules%2Fwhich%2FLICENSE"
+    },
+    {
+      "source": "third_party/licenses/psycopg-binary/LICENSE.txt",
+      "target": "third_party/licenses/psycopg-binary/LICENSE.txt"
+    },
+    {
+      "source": "third_party/licenses/psycopg/LICENSE.txt",
+      "target": "third_party/licenses/psycopg/LICENSE.txt"
+    },
+    {
+      "source": "third_party/licenses/pyOpenSSL/LICENSE",
+      "target": "third_party/licenses/pyOpenSSL/LICENSE"
+    },
+    {
+      "source": "third_party/licenses/pyasn1/LICENSE.rst",
+      "target": "third_party/licenses/pyasn1/LICENSE.rst"
+    },
+    {
+      "source": "third_party/licenses/pyasn1_modules/LICENSE.txt",
+      "target": "third_party/licenses/pyasn1_modules/LICENSE.txt"
+    },
+    {
+      "source": "third_party/licenses/pycparser/LICENSE",
+      "target": "third_party/licenses/pycparser/LICENSE"
+    },
+    {
+      "source": "third_party/licenses/pydantic/LICENSE",
+      "target": "third_party/licenses/pydantic/LICENSE"
+    },
+    {
+      "source": "third_party/licenses/pydantic_core/LICENSE",
+      "target": "third_party/licenses/pydantic_core/LICENSE"
+    },
+    {
+      "source": "third_party/licenses/pytest/AUTHORS",
+      "target": "third_party/licenses/pytest/AUTHORS"
+    },
+    {
+      "source": "third_party/licenses/pytest/LICENSE",
+      "target": "third_party/licenses/pytest/LICENSE"
+    },
+    {
+      "source": "third_party/licenses/referencing/COPYING",
+      "target": "third_party/licenses/referencing/COPYING"
+    },
+    {
+      "source": "third_party/licenses/rfc8785/LICENSE",
+      "target": "third_party/licenses/rfc8785/LICENSE"
+    },
+    {
+      "source": "third_party/licenses/rpds-py/LICENSE",
+      "target": "third_party/licenses/rpds-py/LICENSE"
+    },
+    {
+      "source": "third_party/licenses/setuptools/LICENSE",
+      "target": "third_party/licenses/setuptools/LICENSE"
+    },
+    {
+      "source": "third_party/licenses/setuptools/LICENSE.APACHE",
+      "target": "third_party/licenses/setuptools/LICENSE.APACHE"
+    },
+    {
+      "source": "third_party/licenses/setuptools/LICENSE.BSD",
+      "target": "third_party/licenses/setuptools/LICENSE.BSD"
+    },
+    {
+      "source": "third_party/licenses/setuptools/LICENSE.txt",
+      "target": "third_party/licenses/setuptools/LICENSE.txt"
+    },
+    {
+      "source": "third_party/licenses/setuptools/wheel-members/setuptools-83.0.0.dist-info/licenses/LICENSE",
+      "target": "third_party/licenses/setuptools/wheel-members/setuptools-83.0.0.dist-info/licenses/LICENSE"
+    },
+    {
+      "source": "third_party/licenses/setuptools/wheel-members/setuptools/_vendor/autocommand-2.2.2.dist-info/LICENSE",
+      "target": "third_party/licenses/setuptools/wheel-members/setuptools/_vendor/autocommand-2.2.2.dist-info/LICENSE"
+    },
+    {
+      "source": "third_party/licenses/setuptools/wheel-members/setuptools/_vendor/backports.tarfile-1.2.0.dist-info/LICENSE",
+      "target": "third_party/licenses/setuptools/wheel-members/setuptools/_vendor/backports.tarfile-1.2.0.dist-info/LICENSE"
+    },
+    {
+      "source": "third_party/licenses/setuptools/wheel-members/setuptools/_vendor/importlib_metadata-8.7.1.dist-info/licenses/LICENSE",
+      "target": "third_party/licenses/setuptools/wheel-members/setuptools/_vendor/importlib_metadata-8.7.1.dist-info/licenses/LICENSE"
+    },
+    {
+      "source": "third_party/licenses/setuptools/wheel-members/setuptools/_vendor/jaraco.text-4.0.0.dist-info/LICENSE",
+      "target": "third_party/licenses/setuptools/wheel-members/setuptools/_vendor/jaraco.text-4.0.0.dist-info/LICENSE"
+    },
+    {
+      "source": "third_party/licenses/setuptools/wheel-members/setuptools/_vendor/jaraco_context-6.1.0.dist-info/licenses/LICENSE",
+      "target": "third_party/licenses/setuptools/wheel-members/setuptools/_vendor/jaraco_context-6.1.0.dist-info/licenses/LICENSE"
+    },
+    {
+      "source": "third_party/licenses/setuptools/wheel-members/setuptools/_vendor/jaraco_functools-4.4.0.dist-info/licenses/LICENSE",
+      "target": "third_party/licenses/setuptools/wheel-members/setuptools/_vendor/jaraco_functools-4.4.0.dist-info/licenses/LICENSE"
+    },
+    {
+      "source": "third_party/licenses/setuptools/wheel-members/setuptools/_vendor/more_itertools-10.8.0.dist-info/licenses/LICENSE",
+      "target": "third_party/licenses/setuptools/wheel-members/setuptools/_vendor/more_itertools-10.8.0.dist-info/licenses/LICENSE"
+    },
+    {
+      "source": "third_party/licenses/setuptools/wheel-members/setuptools/_vendor/packaging-26.0.dist-info/licenses/LICENSE",
+      "target": "third_party/licenses/setuptools/wheel-members/setuptools/_vendor/packaging-26.0.dist-info/licenses/LICENSE"
+    },
+    {
+      "source": "third_party/licenses/setuptools/wheel-members/setuptools/_vendor/packaging-26.0.dist-info/licenses/LICENSE.APACHE",
+      "target": "third_party/licenses/setuptools/wheel-members/setuptools/_vendor/packaging-26.0.dist-info/licenses/LICENSE.APACHE"
+    },
+    {
+      "source": "third_party/licenses/setuptools/wheel-members/setuptools/_vendor/packaging-26.0.dist-info/licenses/LICENSE.BSD",
+      "target": "third_party/licenses/setuptools/wheel-members/setuptools/_vendor/packaging-26.0.dist-info/licenses/LICENSE.BSD"
+    },
+    {
+      "source": "third_party/licenses/setuptools/wheel-members/setuptools/_vendor/platformdirs-4.4.0.dist-info/licenses/LICENSE",
+      "target": "third_party/licenses/setuptools/wheel-members/setuptools/_vendor/platformdirs-4.4.0.dist-info/licenses/LICENSE"
+    },
+    {
+      "source": "third_party/licenses/setuptools/wheel-members/setuptools/_vendor/tomli-2.4.0.dist-info/licenses/LICENSE",
+      "target": "third_party/licenses/setuptools/wheel-members/setuptools/_vendor/tomli-2.4.0.dist-info/licenses/LICENSE"
+    },
+    {
+      "source": "third_party/licenses/setuptools/wheel-members/setuptools/_vendor/wheel-0.46.3.dist-info/licenses/LICENSE.txt",
+      "target": "third_party/licenses/setuptools/wheel-members/setuptools/_vendor/wheel-0.46.3.dist-info/licenses/LICENSE.txt"
+    },
+    {
+      "source": "third_party/licenses/setuptools/wheel-members/setuptools/_vendor/zipp-3.23.0.dist-info/licenses/LICENSE",
+      "target": "third_party/licenses/setuptools/wheel-members/setuptools/_vendor/zipp-3.23.0.dist-info/licenses/LICENSE"
+    },
+    {
+      "source": "third_party/licenses/typing-inspection/LICENSE",
+      "target": "third_party/licenses/typing-inspection/LICENSE"
+    },
+    {
+      "source": "third_party/licenses/typing_extensions/LICENSE",
+      "target": "third_party/licenses/typing_extensions/LICENSE"
+    },
+    {
+      "source": "third_party/licenses/webauthn/LICENSE",
+      "target": "third_party/licenses/webauthn/LICENSE"
+    },
+    {
+      "source": "third_party/licenses/wheel/LICENSE.txt",
+      "target": "third_party/licenses/wheel/LICENSE.txt"
+    },
+    {
+      "source": "third_party/licenses/wheel/wheel-members/wheel-0.46.2.dist-info/licenses/LICENSE.txt",
+      "target": "third_party/licenses/wheel/wheel-members/wheel-0.46.2.dist-info/licenses/LICENSE.txt"
+    },
+    {
+      "source": "web/app.js",
+      "target": "web/app.js"
+    },
+    {
+      "source": "web/index.html",
+      "target": "web/index.html"
+    },
+    {
+      "source": "web/style.css",
+      "target": "web/style.css"
+    }
+  ]
+}

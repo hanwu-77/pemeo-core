@@ -1,0 +1,929 @@
+{
+  "captured_at": "2026-09-21T14:49:14.975897+00:00",
+  "python": "CPython 3.12",
+  "targets": {
+    "macos14-arm64": [
+      "macosx_14_0_arm64",
+      "macosx_14_0_universal2",
+      "macosx_13_0_arm64",
+      "macosx_13_0_universal2",
+      "macosx_12_0_arm64",
+      "macosx_12_0_universal2",
+      "macosx_11_0_arm64",
+      "macosx_11_0_universal2",
+      "macosx_10_16_universal2",
+      "macosx_10_15_universal2",
+      "macosx_10_14_universal2",
+      "macosx_10_13_universal2",
+      "macosx_10_12_universal2",
+      "macosx_10_11_universal2",
+      "macosx_10_10_universal2",
+      "macosx_10_9_universal2",
+      "macosx_10_8_universal2",
+      "macosx_10_7_universal2",
+      "macosx_10_6_universal2",
+      "macosx_10_5_universal2",
+      "macosx_10_4_universal2"
+    ],
+    "linux-x86_64": [
+      "manylinux_2_39_x86_64",
+      "manylinux_2_38_x86_64",
+      "manylinux_2_37_x86_64",
+      "manylinux_2_36_x86_64",
+      "manylinux_2_35_x86_64",
+      "manylinux_2_34_x86_64",
+      "manylinux_2_33_x86_64",
+      "manylinux_2_32_x86_64",
+      "manylinux_2_31_x86_64",
+      "manylinux_2_30_x86_64",
+      "manylinux_2_29_x86_64",
+      "manylinux_2_28_x86_64",
+      "manylinux_2_27_x86_64",
+      "manylinux_2_26_x86_64",
+      "manylinux_2_25_x86_64",
+      "manylinux_2_24_x86_64",
+      "manylinux_2_23_x86_64",
+      "manylinux_2_22_x86_64",
+      "manylinux_2_21_x86_64",
+      "manylinux_2_20_x86_64",
+      "manylinux_2_19_x86_64",
+      "manylinux_2_18_x86_64",
+      "manylinux_2_17_x86_64",
+      "manylinux2014_x86_64"
+    ]
+  },
+  "packages": [
+    {
+      "name": "annotated-types",
+      "version": "0.8.0",
+      "metadata_url": "https://pypi.org/pypi/annotated-types/0.8.0/json",
+      "metadata_sha256": "a6e8e5b10c8fd2f596bba53e015cd37f6279fb5cec26ce0c5e9968625be4fefa",
+      "wheels": [
+        {
+          "filename": "annotated_types-0.8.0-py3-none-any.whl",
+          "url": "https://files.pythonhosted.org/packages/99/91/8acff4f5e50511b911bbccb72b8628a49c68ce14148cd9f6431094859a90/annotated_types-0.8.0-py3-none-any.whl",
+          "sha256": "f072f4d804ea359e4eaf198b1af7a8b0943881a87f31bb764f8bf219bb9419e0",
+          "targets": [
+            "macos14-arm64",
+            "linux-x86_64"
+          ],
+          "requires_dist": []
+        }
+      ]
+    },
+    {
+      "name": "attrs",
+      "version": "26.1.0",
+      "metadata_url": "https://pypi.org/pypi/attrs/26.1.0/json",
+      "metadata_sha256": "a882bf941fb4a0bb748d0194df544121cc130f5fb15a710ab6b804c17d2899b7",
+      "wheels": [
+        {
+          "filename": "attrs-26.1.0-py3-none-any.whl",
+          "url": "https://files.pythonhosted.org/packages/64/b4/17d4b0b2a2dc85a6df63d1157e028ed19f90d4cd97c36717afef2bc2f395/attrs-26.1.0-py3-none-any.whl",
+          "sha256": "c647aa4a12dfbad9333ca4e71fe62ddc36f4e63b2d260a37a8b83d2f043ac309",
+          "targets": [
+            "macos14-arm64",
+            "linux-x86_64"
+          ],
+          "requires_dist": []
+        }
+      ]
+    },
+    {
+      "name": "cbor2",
+      "version": "6.1.4",
+      "metadata_url": "https://pypi.org/pypi/cbor2/6.1.4/json",
+      "metadata_sha256": "0ba4bb61d9ce0de0a17a02f92b81ecac870e9d7f31cbdccc607f2f75dd99b766",
+      "wheels": [
+        {
+          "filename": "cbor2-6.1.4-cp312-cp312-macosx_11_0_arm64.whl",
+          "url": "https://files.pythonhosted.org/packages/2e/76/fb64293c19cafb860060310c57b768fd9cfb7cf592449660b756538cc116/cbor2-6.1.4-cp312-cp312-macosx_11_0_arm64.whl",
+          "sha256": "1fc15061553e4494dc10883237501e3402c645fe509248dd698e1faf2460d68b",
+          "targets": [
+            "macos14-arm64"
+          ],
+          "requires_dist": []
+        },
+        {
+          "filename": "cbor2-6.1.4-cp312-cp312-manylinux_2_28_x86_64.whl",
+          "url": "https://files.pythonhosted.org/packages/f0/a5/10c6c126d59b07f2bd005094dd12a20afa46146f7e2673ed6f61a57641a7/cbor2-6.1.4-cp312-cp312-manylinux_2_28_x86_64.whl",
+          "sha256": "310f3dfb296ba48fe9b63c5cf26e691e3548a1eae6901d2f0c18e941d151f220",
+          "targets": [
+            "linux-x86_64"
+          ],
+          "requires_dist": []
+        }
+      ]
+    },
+    {
+      "name": "cffi",
+      "version": "2.1.1",
+      "metadata_url": "https://pypi.org/pypi/cffi/2.1.1/json",
+      "metadata_sha256": "2255e530e3f80593a354e3d84a29966924d0e10309d1e3a6d50f845ab7d8df66",
+      "wheels": [
+        {
+          "filename": "cffi-2.1.1-cp312-cp312-macosx_11_0_arm64.whl",
+          "url": "https://files.pythonhosted.org/packages/54/7d/16e5a096677b5e313ca80cd5e5170efa3ea44624a82bb111925522da64b1/cffi-2.1.1-cp312-cp312-macosx_11_0_arm64.whl",
+          "sha256": "f81b3b8f3d4e343550fa4baa0e479bba9f2d29ce9c2e9b51d1ce1718d7442fcf",
+          "targets": [
+            "macos14-arm64"
+          ],
+          "requires_dist": [
+            "pycparser; implementation_name != \"PyPy\""
+          ]
+        },
+        {
+          "filename": "cffi-2.1.1-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl",
+          "url": "https://files.pythonhosted.org/packages/b1/db/dceb9dd5b231e1da801793f8acc9f3c52a7e1afe40bb1aae37e02b0faad5/cffi-2.1.1-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl",
+          "sha256": "c1453022f490d2459a11819d83ad1d586e9ff65a12ac3e705ffebd46d3685dcf",
+          "targets": [
+            "linux-x86_64"
+          ],
+          "requires_dist": [
+            "pycparser; implementation_name != \"PyPy\""
+          ]
+        }
+      ]
+    },
+    {
+      "name": "cryptography",
+      "version": "50.0.1",
+      "metadata_url": "https://pypi.org/pypi/cryptography/50.0.1/json",
+      "metadata_sha256": "02bbd8a2728dac94f7d6a4a3d5de523afdadc90ca5b1476845ad3f505861ea63",
+      "wheels": [
+        {
+          "filename": "cryptography-50.0.1-cp311-abi3-macosx_11_0_arm64.whl",
+          "url": "https://files.pythonhosted.org/packages/ba/19/797e2aaac9df6a66f1550f49979dc1b1e39ecd2077501c30efa81e8d5d67/cryptography-50.0.1-cp311-abi3-macosx_11_0_arm64.whl",
+          "sha256": "b8f852c65863251b9e3a1b8c150ce21e59b522dbb6a7d4bc80e680d38388e986",
+          "targets": [
+            "macos14-arm64"
+          ],
+          "requires_dist": [
+            "cffi>=2.0.0 ; platform_python_implementation != 'PyPy'",
+            "typing-extensions>=4.13.2 ; python_full_version < '3.11'",
+            "bcrypt>=3.1.5 ; extra == 'ssh'"
+          ]
+        },
+        {
+          "filename": "cryptography-50.0.1-cp311-abi3-manylinux_2_34_x86_64.whl",
+          "url": "https://files.pythonhosted.org/packages/85/66/6ccca4722987ddedaa7fc9c3f4708af7431f5535666c174350830888c6b7/cryptography-50.0.1-cp311-abi3-manylinux_2_34_x86_64.whl",
+          "sha256": "51afcfceb15597cf2635068e4ac9a56b2abde622edde17f37d85fd7b5306497a",
+          "targets": [
+            "linux-x86_64"
+          ],
+          "requires_dist": [
+            "cffi>=2.0.0 ; platform_python_implementation != 'PyPy'",
+            "typing-extensions>=4.13.2 ; python_full_version < '3.11'",
+            "bcrypt>=3.1.5 ; extra == 'ssh'"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "greenlet",
+      "version": "3.5.6",
+      "metadata_url": "https://pypi.org/pypi/greenlet/3.5.6/json",
+      "metadata_sha256": "c7dc3bdf600092ea1294ae9fac80198bb2b463943668f410f5174c16a4761d74",
+      "wheels": [
+        {
+          "filename": "greenlet-3.5.6-cp312-cp312-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl",
+          "url": "https://files.pythonhosted.org/packages/66/6a/1594f3869c57c149abdb380492529e04d4c0229b5e4d79572c5bd0aaa673/greenlet-3.5.6-cp312-cp312-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl",
+          "sha256": "975736b002ed080d124cf81a79cb7e05cb26d6b3f5c7a7b651c0fcce70353aa1",
+          "targets": [
+            "linux-x86_64"
+          ],
+          "requires_dist": [
+            "Sphinx; extra == \"docs\"",
+            "furo; extra == \"docs\"",
+            "objgraph; extra == \"test\"",
+            "psutil; extra == \"test\"",
+            "setuptools; extra == \"test\""
+          ]
+        }
+      ]
+    },
+    {
+      "name": "iniconfig",
+      "version": "2.3.0",
+      "metadata_url": "https://pypi.org/pypi/iniconfig/2.3.0/json",
+      "metadata_sha256": "38c06d73779f13d8e4b48d48b3c524ff23e59d7be4bdb44cb6d90b3c5eb20182",
+      "wheels": [
+        {
+          "filename": "iniconfig-2.3.0-py3-none-any.whl",
+          "url": "https://files.pythonhosted.org/packages/cb/b1/3846dd7f199d53cb17f49cba7e651e9ce294d8497c8c150530ed11865bb8/iniconfig-2.3.0-py3-none-any.whl",
+          "sha256": "f631c04d2c48c52b84d0d0549c99ff3859c98df65b3101406327ecc7d53fbf12",
+          "targets": [
+            "macos14-arm64",
+            "linux-x86_64"
+          ],
+          "requires_dist": []
+        }
+      ]
+    },
+    {
+      "name": "jsonschema",
+      "version": "4.26.0",
+      "metadata_url": "https://pypi.org/pypi/jsonschema/4.26.0/json",
+      "metadata_sha256": "d0c9ccdfa30c3cdc57b048c2be21123dfb0c2f4d6bef2e8324dcb4eac985cfcf",
+      "wheels": [
+        {
+          "filename": "jsonschema-4.26.0-py3-none-any.whl",
+          "url": "https://files.pythonhosted.org/packages/69/90/f63fb5873511e014207a475e2bb4e8b2e570d655b00ac19a9a0ca0a385ee/jsonschema-4.26.0-py3-none-any.whl",
+          "sha256": "d489f15263b8d200f8387e64b4c3a75f06629559fb73deb8fdfb525f2dab50ce",
+          "targets": [
+            "macos14-arm64",
+            "linux-x86_64"
+          ],
+          "requires_dist": [
+            "attrs>=22.2.0",
+            "jsonschema-specifications>=2023.03.6",
+            "referencing>=0.28.4",
+            "rpds-py>=0.25.0",
+            "fqdn; extra == 'format'",
+            "idna; extra == 'format'",
+            "isoduration; extra == 'format'",
+            "jsonpointer>1.13; extra == 'format'",
+            "rfc3339-validator; extra == 'format'",
+            "rfc3987; extra == 'format'",
+            "uri-template; extra == 'format'",
+            "webcolors>=1.11; extra == 'format'",
+            "fqdn; extra == 'format-nongpl'",
+            "idna; extra == 'format-nongpl'",
+            "isoduration; extra == 'format-nongpl'",
+            "jsonpointer>1.13; extra == 'format-nongpl'",
+            "rfc3339-validator; extra == 'format-nongpl'",
+            "rfc3986-validator>0.1.0; extra == 'format-nongpl'",
+            "rfc3987-syntax>=1.1.0; extra == 'format-nongpl'",
+            "uri-template; extra == 'format-nongpl'",
+            "webcolors>=24.6.0; extra == 'format-nongpl'"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "jsonschema-specifications",
+      "version": "2025.9.1",
+      "metadata_url": "https://pypi.org/pypi/jsonschema-specifications/2025.9.1/json",
+      "metadata_sha256": "91810d8f79384375ad0c0cf631e06903e2790b030d3fad2f1ad657b20ddd839e",
+      "wheels": [
+        {
+          "filename": "jsonschema_specifications-2025.9.1-py3-none-any.whl",
+          "url": "https://files.pythonhosted.org/packages/41/45/1a4ed80516f02155c51f51e8cedb3c1902296743db0bbc66608a0db2814f/jsonschema_specifications-2025.9.1-py3-none-any.whl",
+          "sha256": "98802fee3a11ee76ecaca44429fda8a41bff98b00a0f2838151b113f210cc6fe",
+          "targets": [
+            "macos14-arm64",
+            "linux-x86_64"
+          ],
+          "requires_dist": [
+            "referencing>=0.31.0"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "packaging",
+      "version": "26.3",
+      "metadata_url": "https://pypi.org/pypi/packaging/26.3/json",
+      "metadata_sha256": "4f190d2f0b312b3086058cee64ab4333bf3ce67fb78b4c2bdb43899049b29f4d",
+      "wheels": [
+        {
+          "filename": "packaging-26.3-py3-none-any.whl",
+          "url": "https://files.pythonhosted.org/packages/63/34/ba1c580383c9eada3711951fef0795c80b829a078d72188184bcab9dd527/packaging-26.3-py3-none-any.whl",
+          "sha256": "d7193f7c8e4e93f444fde0262bf90af30e16fa0ad0ad44cb553c87339b23cd1c",
+          "targets": [
+            "macos14-arm64",
+            "linux-x86_64"
+          ],
+          "requires_dist": []
+        }
+      ]
+    },
+    {
+      "name": "pip",
+      "version": "26.2",
+      "metadata_url": "https://pypi.org/pypi/pip/26.2/json",
+      "metadata_sha256": "bc1b608d89fa343293085715efd4f10d68ad136a04fd4629fc85b2d6e655a518",
+      "wheels": [
+        {
+          "filename": "pip-26.2-py3-none-any.whl",
+          "url": "https://files.pythonhosted.org/packages/62/36/a3aed958d60531cb442b7ab4596cda7b3621cfb916f8ae1d6769795c7dc1/pip-26.2-py3-none-any.whl",
+          "sha256": "931c303696af6fa3417112103b1cad26890e5a07eccb5b99783700e33f2b8aad",
+          "targets": [
+            "macos14-arm64",
+            "linux-x86_64"
+          ],
+          "requires_dist": []
+        }
+      ]
+    },
+    {
+      "name": "pluggy",
+      "version": "1.6.0",
+      "metadata_url": "https://pypi.org/pypi/pluggy/1.6.0/json",
+      "metadata_sha256": "db23d1227f5870da7538b1e29371d9fc9a93b0499989f8e3ef021fdccd75bc8e",
+      "wheels": [
+        {
+          "filename": "pluggy-1.6.0-py3-none-any.whl",
+          "url": "https://files.pythonhosted.org/packages/54/20/4d324d65cc6d9205fabedc306948156824eb9f0ee1633355a8f7ec5c66bf/pluggy-1.6.0-py3-none-any.whl",
+          "sha256": "e920276dd6813095e9377c0bc5566d94c932c33b27a3e3945d8389c374dd4746",
+          "targets": [
+            "macos14-arm64",
+            "linux-x86_64"
+          ],
+          "requires_dist": [
+            "pre-commit; extra == \"dev\"",
+            "tox; extra == \"dev\"",
+            "pytest; extra == \"testing\"",
+            "pytest-benchmark; extra == \"testing\"",
+            "coverage; extra == \"testing\""
+          ]
+        }
+      ]
+    },
+    {
+      "name": "psycopg",
+      "version": "3.3.5",
+      "metadata_url": "https://pypi.org/pypi/psycopg/3.3.5/json",
+      "metadata_sha256": "09cee29640ce28af1f3056737d339b0467cbf7da6efd04c790ba6da89a22bfe3",
+      "wheels": [
+        {
+          "filename": "psycopg-3.3.5-py3-none-any.whl",
+          "url": "https://files.pythonhosted.org/packages/3d/2e/d0a645bcaadde68bd6d93c43f02f14b0191bdda367ce3f7722abe3da744a/psycopg-3.3.5-py3-none-any.whl",
+          "sha256": "ce5aa5cdb4f9379f00f487590e5890bfa7df9a164648c969ffa628505e21af4e",
+          "targets": [
+            "macos14-arm64",
+            "linux-x86_64"
+          ],
+          "requires_dist": [
+            "typing-extensions>=4.6; python_version < \"3.13\"",
+            "tzdata; sys_platform == \"win32\"",
+            "psycopg-c==3.3.5; implementation_name != \"pypy\" and extra == \"c\"",
+            "psycopg-binary==3.3.5; implementation_name != \"pypy\" and extra == \"binary\"",
+            "psycopg-pool; extra == \"pool\"",
+            "anyio>=4.0; extra == \"test\"",
+            "mypy>=2.1.0; implementation_name != \"pypy\" and extra == \"test\"",
+            "pproxy>=2.7; extra == \"test\"",
+            "pytest>=6.2.5; extra == \"test\"",
+            "pytest-cov>=3.0; extra == \"test\"",
+            "pytest-randomly>=3.5; extra == \"test\"",
+            "ast-comments>=1.1.2; extra == \"dev\"",
+            "black>=26.1.0; extra == \"dev\"",
+            "codespell>=2.2; extra == \"dev\"",
+            "cython-lint>=0.21; extra == \"dev\"",
+            "dnspython>=2.1; extra == \"dev\"",
+            "flake8>=4.0; extra == \"dev\"",
+            "isort[colors]<9.0,>=6.0; extra == \"dev\"",
+            "isort-psycopg; extra == \"dev\"",
+            "mypy>=2.1.0; extra == \"dev\"",
+            "pre-commit>=4.0.1; extra == \"dev\"",
+            "types-setuptools>=57.4; extra == \"dev\"",
+            "types-shapely>=2.0; extra == \"dev\"",
+            "wheel>=0.37; extra == \"dev\"",
+            "Sphinx>=9.1; extra == \"docs\"",
+            "furo==2025.12.19; extra == \"docs\"",
+            "sphinx-autobuild>=2025.8.25; extra == \"docs\"",
+            "sphinx-autodoc-typehints>=3.10.2; extra == \"docs\""
+          ]
+        }
+      ]
+    },
+    {
+      "name": "psycopg-binary",
+      "version": "3.3.5",
+      "metadata_url": "https://pypi.org/pypi/psycopg-binary/3.3.5/json",
+      "metadata_sha256": "e15105c0676bfe5a4fdc280d2798504bff7be638e0b90a970e2fd880cf976216",
+      "wheels": [
+        {
+          "filename": "psycopg_binary-3.3.5-cp312-cp312-macosx_11_0_arm64.whl",
+          "url": "https://files.pythonhosted.org/packages/4f/56/b23c5978e55cf4effdc5a3e13a17d69a580a487993e01b7c3768dd24281c/psycopg_binary-3.3.5-cp312-cp312-macosx_11_0_arm64.whl",
+          "sha256": "0249c3e960cdee686000eb77169fb6590105c05bacc37e057ccdffdcd8e6ebde",
+          "targets": [
+            "macos14-arm64"
+          ],
+          "requires_dist": []
+        },
+        {
+          "filename": "psycopg_binary-3.3.5-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl",
+          "url": "https://files.pythonhosted.org/packages/21/d1/0f244dfef389e52e9dc3056f2a9033d1f6901e97d24d9a9c8b836e32ab6b/psycopg_binary-3.3.5-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl",
+          "sha256": "682a17a57415c3ca1731eec018ed031f012ffcb81ba74806eb219cb396065672",
+          "targets": [
+            "linux-x86_64"
+          ],
+          "requires_dist": []
+        }
+      ]
+    },
+    {
+      "name": "pyasn1",
+      "version": "0.6.4",
+      "metadata_url": "https://pypi.org/pypi/pyasn1/0.6.4/json",
+      "metadata_sha256": "cce3a342bc3f2027bcf079357de8886d17f1c058c5233b3f348b749a9ed2c38b",
+      "wheels": [
+        {
+          "filename": "pyasn1-0.6.4-py3-none-any.whl",
+          "url": "https://files.pythonhosted.org/packages/9a/3b/6163796d69c3977d1e4287bea4a6979161cbbdd170ebb430511e8e1999ce/pyasn1-0.6.4-py3-none-any.whl",
+          "sha256": "deda9277cfd454080ec40b207fb6df82206a3a2688735233cdcd8d3d565f088b",
+          "targets": [
+            "macos14-arm64",
+            "linux-x86_64"
+          ],
+          "requires_dist": []
+        }
+      ]
+    },
+    {
+      "name": "pyasn1_modules",
+      "version": "0.4.2",
+      "metadata_url": "https://pypi.org/pypi/pyasn1_modules/0.4.2/json",
+      "metadata_sha256": "5176a4663fb2345b3a0cd53e6d72d541fab642ed1ad815b1224c124f8287cc8e",
+      "wheels": [
+        {
+          "filename": "pyasn1_modules-0.4.2-py3-none-any.whl",
+          "url": "https://files.pythonhosted.org/packages/47/8d/d529b5d697919ba8c11ad626e835d4039be708a35b0d22de83a269a6682c/pyasn1_modules-0.4.2-py3-none-any.whl",
+          "sha256": "29253a9207ce32b64c3ac6600edc75368f98473906e8fd1043bd6b5b1de2c14a",
+          "targets": [
+            "macos14-arm64",
+            "linux-x86_64"
+          ],
+          "requires_dist": [
+            "pyasn1<0.7.0,>=0.6.1"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "pycparser",
+      "version": "3.0",
+      "metadata_url": "https://pypi.org/pypi/pycparser/3.0/json",
+      "metadata_sha256": "116983f7de9bda289946d08200ba1bd7b832547f151165c12bd87d6b8e59b015",
+      "wheels": [
+        {
+          "filename": "pycparser-3.0-py3-none-any.whl",
+          "url": "https://files.pythonhosted.org/packages/0c/c3/44f3fbbfa403ea2a7c779186dc20772604442dde72947e7d01069cbe98e3/pycparser-3.0-py3-none-any.whl",
+          "sha256": "b727414169a36b7d524c1c3e31839a521725078d7b2ff038656844266160a992",
+          "targets": [
+            "macos14-arm64",
+            "linux-x86_64"
+          ],
+          "requires_dist": []
+        }
+      ]
+    },
+    {
+      "name": "pydantic",
+      "version": "2.13.5",
+      "metadata_url": "https://pypi.org/pypi/pydantic/2.13.5/json",
+      "metadata_sha256": "201fdebc5da596df2df23805e8f2b6386888fad4c396dadc48c1c297a61431a5",
+      "wheels": [
+        {
+          "filename": "pydantic-2.13.5-py3-none-any.whl",
+          "url": "https://files.pythonhosted.org/packages/eb/47/c95ffc2009878c7aac0c5e08528022dcb885933252a88b5f170058014464/pydantic-2.13.5-py3-none-any.whl",
+          "sha256": "346a034f080da3755d8e9cb5e00e8b07de1d39e4f6e2c87d8ab7cafa0b269a73",
+          "targets": [
+            "macos14-arm64",
+            "linux-x86_64"
+          ],
+          "requires_dist": [
+            "annotated-types>=0.6.0",
+            "pydantic-core==2.46.5",
+            "typing-extensions>=4.14.1",
+            "typing-inspection>=0.4.2",
+            "email-validator>=2.0.0; extra == 'email'",
+            "tzdata; (python_version >= '3.9' and platform_system == 'Windows') and extra == 'timezone'"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "pydantic_core",
+      "version": "2.46.5",
+      "metadata_url": "https://pypi.org/pypi/pydantic_core/2.46.5/json",
+      "metadata_sha256": "5b5b7b259b0b98f2594f92cb9255a1ce3ec978608a81def66193e77f65212a1c",
+      "wheels": [
+        {
+          "filename": "pydantic_core-2.46.5-cp312-cp312-macosx_11_0_arm64.whl",
+          "url": "https://files.pythonhosted.org/packages/db/50/26b091836076ce4cb2fac264186936acc069e0595772cfd02a563bc4761a/pydantic_core-2.46.5-cp312-cp312-macosx_11_0_arm64.whl",
+          "sha256": "a39ac25a9a2fa4072efdb429833c4a4c8009a51ff9eea3eeae131713cd27991e",
+          "targets": [
+            "macos14-arm64"
+          ],
+          "requires_dist": [
+            "typing-extensions>=4.14.1"
+          ]
+        },
+        {
+          "filename": "pydantic_core-2.46.5-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+          "url": "https://files.pythonhosted.org/packages/c0/a4/eb9409ec0736e50aa70a412f16c204ed149516846912f7e6724d4c73ee53/pydantic_core-2.46.5-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+          "sha256": "0fc5be0abd4a407e200d844b404e33639a554e7bd0d448e7b9ae181be4789ac2",
+          "targets": [
+            "linux-x86_64"
+          ],
+          "requires_dist": [
+            "typing-extensions>=4.14.1"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Pygments",
+      "version": "2.21.0",
+      "metadata_url": "https://pypi.org/pypi/Pygments/2.21.0/json",
+      "metadata_sha256": "330104a10adc8a587e3f98f4e207557125ca0c1d489e129334da5acb2b813a03",
+      "wheels": [
+        {
+          "filename": "pygments-2.21.0-py3-none-any.whl",
+          "url": "https://files.pythonhosted.org/packages/71/46/17f022dd3e953bf20a04a028a21ec746d942f8d2af30fa0f124fa0e6a684/pygments-2.21.0-py3-none-any.whl",
+          "sha256": "2363c69b61c4a97c838da3b130dcd6468f4848992b21a82f2a63ec34377137d9",
+          "targets": [
+            "macos14-arm64",
+            "linux-x86_64"
+          ],
+          "requires_dist": [
+            "colorama>=0.4.6; extra == 'windows-terminal'"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "pyOpenSSL",
+      "version": "26.4.0",
+      "metadata_url": "https://pypi.org/pypi/pyOpenSSL/26.4.0/json",
+      "metadata_sha256": "065319346d47c6d9f401e228d17b5fb82d6bc695ad18154286da3912d6122981",
+      "wheels": [
+        {
+          "filename": "pyopenssl-26.4.0-py3-none-any.whl",
+          "url": "https://files.pythonhosted.org/packages/51/ad/2cf6d3fa2fae5c79e1ed9960c0d42badd0f94d81dd12b50604cdc839e648/pyopenssl-26.4.0-py3-none-any.whl",
+          "sha256": "f0eb0cb2d581d3ad2b9c489468485e7f2ab6727d08401bcf9d824c3caddf3c1c",
+          "targets": [
+            "macos14-arm64",
+            "linux-x86_64"
+          ],
+          "requires_dist": [
+            "cryptography<51,>=49.0.0",
+            "typing-extensions>=4.9; python_version < \"3.13\"",
+            "pytest-rerunfailures; extra == \"test\"",
+            "pretend; extra == \"test\"",
+            "pytest>=3.0.1; extra == \"test\"",
+            "sphinx!=5.2.0,!=5.2.0.post0,!=7.2.5; extra == \"docs\"",
+            "sphinx_rtd_theme; extra == \"docs\""
+          ]
+        }
+      ]
+    },
+    {
+      "name": "pytest",
+      "version": "9.0.3",
+      "metadata_url": "https://pypi.org/pypi/pytest/9.0.3/json",
+      "metadata_sha256": "cc591fefe6e4a7b22355e88a83c3b28c6b652b0983db43f19066b9912c57689d",
+      "wheels": [
+        {
+          "filename": "pytest-9.0.3-py3-none-any.whl",
+          "url": "https://files.pythonhosted.org/packages/d4/24/a372aaf5c9b7208e7112038812994107bc65a84cd00e0354a88c2c77a617/pytest-9.0.3-py3-none-any.whl",
+          "sha256": "2c5efc453d45394fdd706ade797c0a81091eccd1d6e4bccfcd476e2b8e0ab5d9",
+          "targets": [
+            "macos14-arm64",
+            "linux-x86_64"
+          ],
+          "requires_dist": [
+            "colorama>=0.4; sys_platform == \"win32\"",
+            "exceptiongroup>=1; python_version < \"3.11\"",
+            "iniconfig>=1.0.1",
+            "packaging>=22",
+            "pluggy<2,>=1.5",
+            "pygments>=2.7.2",
+            "tomli>=1; python_version < \"3.11\"",
+            "argcomplete; extra == \"dev\"",
+            "attrs>=19.2; extra == \"dev\"",
+            "hypothesis>=3.56; extra == \"dev\"",
+            "mock; extra == \"dev\"",
+            "requests; extra == \"dev\"",
+            "setuptools; extra == \"dev\"",
+            "xmlschema; extra == \"dev\""
+          ]
+        }
+      ]
+    },
+    {
+      "name": "referencing",
+      "version": "0.37.0",
+      "metadata_url": "https://pypi.org/pypi/referencing/0.37.0/json",
+      "metadata_sha256": "a67968d8e03aa45e650fc2ff0d07796676db1a7841ce8e810bf2dba5af689464",
+      "wheels": [
+        {
+          "filename": "referencing-0.37.0-py3-none-any.whl",
+          "url": "https://files.pythonhosted.org/packages/2c/58/ca301544e1fa93ed4f80d724bf5b194f6e4b945841c5bfd555878eea9fcb/referencing-0.37.0-py3-none-any.whl",
+          "sha256": "381329a9f99628c9069361716891d34ad94af76e461dcb0335825aecc7692231",
+          "targets": [
+            "macos14-arm64",
+            "linux-x86_64"
+          ],
+          "requires_dist": [
+            "attrs>=22.2.0",
+            "rpds-py>=0.7.0",
+            "typing-extensions>=4.4.0; python_version < '3.13'"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "rfc8785",
+      "version": "0.1.4",
+      "metadata_url": "https://pypi.org/pypi/rfc8785/0.1.4/json",
+      "metadata_sha256": "eab7c92b5b9d82953497a77fdb97930e92a8303dddb1866a7f31911eb2a77e69",
+      "wheels": [
+        {
+          "filename": "rfc8785-0.1.4-py3-none-any.whl",
+          "url": "https://files.pythonhosted.org/packages/4d/78/119878110660b2ad709888c8a1614fce7e2fab39080ab960656dc8605bf6/rfc8785-0.1.4-py3-none-any.whl",
+          "sha256": "520d690b448ecf0703691c76e1a34a24ddcd4fc5bc41d589cb7c58ec651bcd48",
+          "targets": [
+            "macos14-arm64",
+            "linux-x86_64"
+          ],
+          "requires_dist": [
+            "rfc8785[doc,test,lint] ; extra == \"dev\"",
+            "build ; extra == \"dev\"",
+            "pdoc ; extra == \"doc\"",
+            "ruff ~= 0.3 ; extra == \"lint\"",
+            "mypy >= 1.0 ; extra == \"lint\"",
+            "interrogate ; extra == \"lint\"",
+            "pytest ; extra == \"test\"",
+            "pytest-cov ; extra == \"test\"",
+            "coverage ; extra == \"test\""
+          ]
+        }
+      ]
+    },
+    {
+      "name": "rpds-py",
+      "version": "2026.6.3",
+      "metadata_url": "https://pypi.org/pypi/rpds-py/2026.6.3/json",
+      "metadata_sha256": "fff1fa33d84392d5684f0c1a40fc23f0a2027113c966498a1f64614bc83b02c2",
+      "wheels": [
+        {
+          "filename": "rpds_py-2026.6.3-cp312-cp312-macosx_11_0_arm64.whl",
+          "url": "https://files.pythonhosted.org/packages/a4/73/319dfa745dd668efe89309141ded489126461fcecd2b8f3a3cda185129b6/rpds_py-2026.6.3-cp312-cp312-macosx_11_0_arm64.whl",
+          "sha256": "538949e262e46caa31ac01bdb3c1e8f642622922cacbabbae6a8445d9dc33eaf",
+          "targets": [
+            "macos14-arm64"
+          ],
+          "requires_dist": []
+        },
+        {
+          "filename": "rpds_py-2026.6.3-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+          "url": "https://files.pythonhosted.org/packages/04/8f/d2f3f532616be4d06c316ef119683e832bd3d41e112bf3a88f4151c95b17/rpds_py-2026.6.3-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+          "sha256": "ecabd69db66de867690f9797f2f8fa27ba501bbc24540cbdbdc649cd15888ba6",
+          "targets": [
+            "linux-x86_64"
+          ],
+          "requires_dist": []
+        }
+      ]
+    },
+    {
+      "name": "setuptools",
+      "version": "83.0.0",
+      "metadata_url": "https://pypi.org/pypi/setuptools/83.0.0/json",
+      "metadata_sha256": "ec6fb3ae8cd5054d89efca6fce7d2e88f58c8b61236bee0bac429fcb79de38fe",
+      "wheels": [
+        {
+          "filename": "setuptools-83.0.0-py3-none-any.whl",
+          "url": "https://files.pythonhosted.org/packages/5d/40/e1e72872c6354b306daef1703549e8e83b4d43cfea356311bf722a043752/setuptools-83.0.0-py3-none-any.whl",
+          "sha256": "29b23c360f22f414dc7336bb39178cc7bcbf6021ed2733cde173f09dba19abb3",
+          "targets": [
+            "macos14-arm64",
+            "linux-x86_64"
+          ],
+          "requires_dist": [
+            "pytest!=8.1.*,>=6; extra == \"test\"",
+            "virtualenv>=13.0.0; extra == \"test\"",
+            "wheel>=0.44.0; extra == \"test\"",
+            "pip>=19.1; extra == \"test\"",
+            "packaging>=24.2; extra == \"test\"",
+            "jaraco.envs>=2.2; extra == \"test\"",
+            "pytest-xdist>=3; extra == \"test\"",
+            "jaraco.path>=3.7.2; extra == \"test\"",
+            "build[virtualenv]>=1.0.3; extra == \"test\"",
+            "filelock>=3.4.0; extra == \"test\"",
+            "ini2toml[lite]>=0.14; extra == \"test\"",
+            "tomli-w>=1.0.0; extra == \"test\"",
+            "pytest-timeout; extra == \"test\"",
+            "pytest-perf; sys_platform != \"cygwin\" and extra == \"test\"",
+            "jaraco.develop>=7.21; (python_version >= \"3.9\" and sys_platform != \"cygwin\") and extra == \"test\"",
+            "pytest-home>=0.5; extra == \"test\"",
+            "pytest-subprocess; extra == \"test\"",
+            "pyproject-hooks!=1.1; extra == \"test\"",
+            "jaraco.test>=5.5; extra == \"test\"",
+            "sphinx>=3.5; extra == \"doc\"",
+            "jaraco.packaging>=9.3; extra == \"doc\"",
+            "rst.linker>=1.9; extra == \"doc\"",
+            "furo; extra == \"doc\"",
+            "sphinx-lint; extra == \"doc\"",
+            "jaraco.tidelift>=1.4; extra == \"doc\"",
+            "pygments-github-lexers==0.0.5; extra == \"doc\"",
+            "sphinx-favicon; extra == \"doc\"",
+            "sphinx-inline-tabs; extra == \"doc\"",
+            "sphinx-reredirects; extra == \"doc\"",
+            "sphinxcontrib-towncrier; extra == \"doc\"",
+            "sphinx-notfound-page<2,>=1; extra == \"doc\"",
+            "pyproject-hooks!=1.1; extra == \"doc\"",
+            "towncrier<24.7; extra == \"doc\"",
+            "packaging>=24.2; extra == \"core\"",
+            "more_itertools>=8.8; extra == \"core\"",
+            "jaraco.text>=3.7; extra == \"core\"",
+            "importlib_metadata>=6; python_version < \"3.10\" and extra == \"core\"",
+            "tomli>=2.0.1; python_version < \"3.11\" and extra == \"core\"",
+            "wheel>=0.43.0; extra == \"core\"",
+            "jaraco.functools>=4; extra == \"core\"",
+            "more_itertools; extra == \"core\"",
+            "pytest-checkdocs>=2.14; extra == \"check\"",
+            "pytest-ruff>=0.2.1; sys_platform != \"cygwin\" and extra == \"check\"",
+            "ruff>=0.13.0; sys_platform != \"cygwin\" and extra == \"check\"",
+            "pytest-cov; extra == \"cover\"",
+            "pytest-enabler>=3.4; extra == \"enabler\"",
+            "pytest-mypy>=1.0.1; platform_python_implementation != \"PyPy\" and extra == \"type\"",
+            "mypy==1.18.*; extra == \"type\"",
+            "importlib_metadata>=7.0.2; python_version < \"3.10\" and extra == \"type\"",
+            "jaraco.develop>=7.21; sys_platform != \"cygwin\" and extra == \"type\""
+          ]
+        }
+      ]
+    },
+    {
+      "name": "SQLAlchemy",
+      "version": "2.0.54",
+      "metadata_url": "https://pypi.org/pypi/SQLAlchemy/2.0.54/json",
+      "metadata_sha256": "e8aa132bc7d6c75e0e16a93f657de057b761fe90135729be7b5289ed1e5a7306",
+      "wheels": [
+        {
+          "filename": "sqlalchemy-2.0.54-cp312-cp312-macosx_11_0_arm64.whl",
+          "url": "https://files.pythonhosted.org/packages/c6/30/75504fd1d70458000e85a3e772333dd0fbf80254b0dc4d41c99922e4d112/sqlalchemy-2.0.54-cp312-cp312-macosx_11_0_arm64.whl",
+          "sha256": "ffba7eb2d67c7505e82a0902aa854d8824b74c28a183820d6a8bd3cfd0f812c2",
+          "targets": [
+            "macos14-arm64"
+          ],
+          "requires_dist": [
+            "importlib-metadata; python_version < \"3.8\"",
+            "greenlet>=1; platform_machine == \"aarch64\" or (platform_machine == \"ppc64le\" or (platform_machine == \"x86_64\" or (platform_machine == \"amd64\" or (platform_machine == \"AMD64\" or (platform_machine == \"win32\" or platform_machine == \"WIN32\")))))",
+            "typing-extensions>=4.6.0",
+            "greenlet>=1; extra == \"asyncio\"",
+            "mypy>=0.910; extra == \"mypy\"",
+            "pyodbc; extra == \"mssql\"",
+            "pymssql; extra == \"mssql-pymssql\"",
+            "pyodbc; extra == \"mssql-pyodbc\"",
+            "mysqlclient>=1.4.0; extra == \"mysql\"",
+            "mysql-connector-python; extra == \"mysql-connector\"",
+            "mariadb!=1.1.10,!=1.1.2,!=1.1.5,>=1.0.1; extra == \"mariadb-connector\"",
+            "cx_oracle>=8; extra == \"oracle\"",
+            "oracledb>=1.0.1; extra == \"oracle-oracledb\"",
+            "psycopg2>=2.7; extra == \"postgresql\"",
+            "pg8000>=1.29.1; extra == \"postgresql-pg8000\"",
+            "greenlet>=1; extra == \"postgresql-asyncpg\"",
+            "asyncpg; extra == \"postgresql-asyncpg\"",
+            "psycopg2-binary; extra == \"postgresql-psycopg2binary\"",
+            "psycopg2cffi; extra == \"postgresql-psycopg2cffi\"",
+            "psycopg>=3.0.7; extra == \"postgresql-psycopg\"",
+            "psycopg[binary]>=3.0.7; extra == \"postgresql-psycopgbinary\"",
+            "pymysql; extra == \"pymysql\"",
+            "greenlet>=1; extra == \"aiomysql\"",
+            "aiomysql>=0.2.0; extra == \"aiomysql\"",
+            "greenlet>=1; extra == \"aioodbc\"",
+            "aioodbc; extra == \"aioodbc\"",
+            "greenlet>=1; extra == \"asyncmy\"",
+            "asyncmy>=0.2.12; extra == \"asyncmy\"",
+            "greenlet>=1; extra == \"aiosqlite\"",
+            "aiosqlite; extra == \"aiosqlite\"",
+            "typing_extensions!=3.10.0.1; extra == \"aiosqlite\"",
+            "sqlcipher3_binary; extra == \"sqlcipher\""
+          ]
+        },
+        {
+          "filename": "sqlalchemy-2.0.54-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl",
+          "url": "https://files.pythonhosted.org/packages/d9/93/34fdc4a4faced77037a6b3ba1db1acd92e9bd12c21e229b327edd1d3e881/sqlalchemy-2.0.54-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl",
+          "sha256": "68d994e9b0d0423a02a20039631fa6fcbb7fa829a992f7605025774940305d19",
+          "targets": [
+            "linux-x86_64"
+          ],
+          "requires_dist": [
+            "importlib-metadata; python_version < \"3.8\"",
+            "greenlet>=1; platform_machine == \"aarch64\" or (platform_machine == \"ppc64le\" or (platform_machine == \"x86_64\" or (platform_machine == \"amd64\" or (platform_machine == \"AMD64\" or (platform_machine == \"win32\" or platform_machine == \"WIN32\")))))",
+            "typing-extensions>=4.6.0",
+            "greenlet>=1; extra == \"asyncio\"",
+            "mypy>=0.910; extra == \"mypy\"",
+            "pyodbc; extra == \"mssql\"",
+            "pymssql; extra == \"mssql-pymssql\"",
+            "pyodbc; extra == \"mssql-pyodbc\"",
+            "mysqlclient>=1.4.0; extra == \"mysql\"",
+            "mysql-connector-python; extra == \"mysql-connector\"",
+            "mariadb!=1.1.10,!=1.1.2,!=1.1.5,>=1.0.1; extra == \"mariadb-connector\"",
+            "cx_oracle>=8; extra == \"oracle\"",
+            "oracledb>=1.0.1; extra == \"oracle-oracledb\"",
+            "psycopg2>=2.7; extra == \"postgresql\"",
+            "pg8000>=1.29.1; extra == \"postgresql-pg8000\"",
+            "greenlet>=1; extra == \"postgresql-asyncpg\"",
+            "asyncpg; extra == \"postgresql-asyncpg\"",
+            "psycopg2-binary; extra == \"postgresql-psycopg2binary\"",
+            "psycopg2cffi; extra == \"postgresql-psycopg2cffi\"",
+            "psycopg>=3.0.7; extra == \"postgresql-psycopg\"",
+            "psycopg[binary]>=3.0.7; extra == \"postgresql-psycopgbinary\"",
+            "pymysql; extra == \"pymysql\"",
+            "greenlet>=1; extra == \"aiomysql\"",
+            "aiomysql>=0.2.0; extra == \"aiomysql\"",
+            "greenlet>=1; extra == \"aioodbc\"",
+            "aioodbc; extra == \"aioodbc\"",
+            "greenlet>=1; extra == \"asyncmy\"",
+            "asyncmy>=0.2.12; extra == \"asyncmy\"",
+            "greenlet>=1; extra == \"aiosqlite\"",
+            "aiosqlite; extra == \"aiosqlite\"",
+            "typing_extensions!=3.10.0.1; extra == \"aiosqlite\"",
+            "sqlcipher3_binary; extra == \"sqlcipher\""
+          ]
+        }
+      ]
+    },
+    {
+      "name": "typing-inspection",
+      "version": "0.4.4",
+      "metadata_url": "https://pypi.org/pypi/typing-inspection/0.4.4/json",
+      "metadata_sha256": "0605416f2f37f2df04e45360cf5ce4ca5eeca6d414bb6ddb1ec5a9893c62ac30",
+      "wheels": [
+        {
+          "filename": "typing_inspection-0.4.4-py3-none-any.whl",
+          "url": "https://files.pythonhosted.org/packages/67/81/4add07e5172b7ac40d8ed5ff580409a7801a4fe26d529bdd915401dabfbe/typing_inspection-0.4.4-py3-none-any.whl",
+          "sha256": "65b8397ba37ccbce054456aaccddfc91e6e3083c92824df348d96ca832f3f147",
+          "targets": [
+            "macos14-arm64",
+            "linux-x86_64"
+          ],
+          "requires_dist": [
+            "typing-extensions>=4.15.0"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "typing_extensions",
+      "version": "4.16.0",
+      "metadata_url": "https://pypi.org/pypi/typing_extensions/4.16.0/json",
+      "metadata_sha256": "2140da00d62dde967f52d0be0ae28444f1d6a3fe603f52c83c23988c32122d5a",
+      "wheels": [
+        {
+          "filename": "typing_extensions-4.16.0-py3-none-any.whl",
+          "url": "https://files.pythonhosted.org/packages/49/d3/b8441a820a491ddfc024b0b0cf0393375b75ea13866d9c66727e54c2fc80/typing_extensions-4.16.0-py3-none-any.whl",
+          "sha256": "481caa481374e813c1b176ada14e97f1f67a4539ce9cfeb3f350d78d6370c2e8",
+          "targets": [
+            "macos14-arm64",
+            "linux-x86_64"
+          ],
+          "requires_dist": []
+        }
+      ]
+    },
+    {
+      "name": "webauthn",
+      "version": "3.0.0",
+      "metadata_url": "https://pypi.org/pypi/webauthn/3.0.0/json",
+      "metadata_sha256": "1abfc6b6c3a3713a70e42bb4e9561c023b1e00f50c88f37943be71f3421f9402",
+      "wheels": [
+        {
+          "filename": "webauthn-3.0.0-py3-none-any.whl",
+          "url": "https://files.pythonhosted.org/packages/1f/d3/38d4efaedba74d854f88b60fd7b80ab37869032f9a9ad54d1892dab20241/webauthn-3.0.0-py3-none-any.whl",
+          "sha256": "b5d0c02b6efa16be683f8a75abd2073f5e59a15f42623cc22c31f27600259e64",
+          "targets": [
+            "macos14-arm64",
+            "linux-x86_64"
+          ],
+          "requires_dist": [
+            "pyasn1>=0.6.2",
+            "pyasn1-modules>=0.4.2",
+            "cbor2>=6.1.2",
+            "cryptography>=49.0.0",
+            "pyOpenSSL>=26.3.0"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "wheel",
+      "version": "0.46.2",
+      "metadata_url": "https://pypi.org/pypi/wheel/0.46.2/json",
+      "metadata_sha256": "de75a6d8388c2bc34f1c79f2002d344c6f466eeaa54aba79e791bb14cbf1c205",
+      "wheels": [
+        {
+          "filename": "wheel-0.46.2-py3-none-any.whl",
+          "url": "https://files.pythonhosted.org/packages/13/2c/5e079cefe955ae58e5a052fe037c850ce493eb7269dedeb960237e78fb0f/wheel-0.46.2-py3-none-any.whl",
+          "sha256": "33ae60725d69eaa249bc1982e739943c23b34b58d51f1cb6253453773aca6e65",
+          "targets": [
+            "macos14-arm64",
+            "linux-x86_64"
+          ],
+          "requires_dist": [
+            "packaging >= 24.0",
+            "pytest >= 6.0.0 ; extra == \"test\"",
+            "setuptools >= 77 ; extra == \"test\""
+          ]
+        }
+      ]
+    }
+  ],
+  "scope": "Selected wheels only; upstream metadata is not an independent trust attestation"
+}

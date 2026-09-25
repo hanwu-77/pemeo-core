@@ -1,0 +1,738 @@
+{
+  "protocolVersion": "0.1",
+  "schemaVersion": "0.1.0",
+  "datasetId": "f3761ffe-daf2-415e-b1d3-bc7b46a11941",
+  "createdAt": "2026-09-10T21:30:00Z",
+  "records": [
+    {
+      "recordId": "827129ca-1025-4ded-9192-f3bd42e005b6",
+      "protocolVersion": "0.1",
+      "schemaVersion": "0.1.0",
+      "kind": "agent",
+      "type": "agent",
+      "createdAt": "2026-09-10T21:30:00Z",
+      "metadata": {
+        "source": {
+          "kind": "system_log"
+        },
+        "attestation": "system_generated",
+        "verification": "not_applicable",
+        "modelReportedConfidence": null,
+        "calibratedInferenceProbability": null,
+        "provenance": {
+          "protocolSourceVersion": "0.1",
+          "evidenceRefs": [],
+          "relationRefs": []
+        },
+        "tags": []
+      },
+      "payload": {
+        "agentType": "human",
+        "label": "Primary human participant",
+        "version": null
+      }
+    },
+    {
+      "recordId": "352f1e9b-3784-42d4-8a4a-f35b64c6420c",
+      "protocolVersion": "0.1",
+      "schemaVersion": "0.1.0",
+      "kind": "agent",
+      "type": "agent",
+      "createdAt": "2026-09-10T21:30:00Z",
+      "metadata": {
+        "source": {
+          "kind": "system_log"
+        },
+        "attestation": "system_generated",
+        "verification": "not_applicable",
+        "modelReportedConfidence": null,
+        "calibratedInferenceProbability": null,
+        "provenance": {
+          "protocolSourceVersion": "0.1",
+          "evidenceRefs": [],
+          "relationRefs": []
+        },
+        "tags": []
+      },
+      "payload": {
+        "agentType": "ecom",
+        "label": "ECOM V0",
+        "version": "0.1.0"
+      }
+    },
+    {
+      "recordId": "bbad5691-f905-4109-b4b5-377a42d77d6d",
+      "protocolVersion": "0.1",
+      "schemaVersion": "0.1.0",
+      "kind": "entity",
+      "type": "context_snapshot",
+      "createdAt": "2026-09-10T21:30:00Z",
+      "metadata": {
+        "source": {
+          "kind": "human"
+        },
+        "attestation": "direct",
+        "verification": "not_applicable",
+        "modelReportedConfidence": null,
+        "calibratedInferenceProbability": null,
+        "provenance": {
+          "protocolSourceVersion": "0.1",
+          "evidenceRefs": [],
+          "relationRefs": []
+        },
+        "tags": []
+      },
+      "payload": {
+        "domain": "project planning",
+        "stakes": "low",
+        "urgency": "low",
+        "timePressure": "low",
+        "notes": "Example low-risk eligible context."
+      }
+    },
+    {
+      "recordId": "5f50c665-c948-4c7f-b5a9-de7ef103aee2",
+      "protocolVersion": "0.1",
+      "schemaVersion": "0.1.0",
+      "kind": "event",
+      "type": "decision_point",
+      "createdAt": "2026-09-10T21:30:00Z",
+      "metadata": {
+        "source": {
+          "kind": "human"
+        },
+        "attestation": "direct",
+        "verification": "not_applicable",
+        "modelReportedConfidence": null,
+        "calibratedInferenceProbability": null,
+        "provenance": {
+          "protocolSourceVersion": "0.1",
+          "evidenceRefs": [],
+          "relationRefs": []
+        },
+        "tags": []
+      },
+      "payload": {
+        "contextRef": "bbad5691-f905-4109-b4b5-377a42d77d6d",
+        "description": "Choose whether to run a small prototype test.",
+        "eligibleForMrt": true,
+        "eligibilityReason": "Low stakes, low time pressure, opted in."
+      },
+      "occurredAt": "2026-09-10T21:30:00Z"
+    },
+    {
+      "recordId": "742947a6-bc1b-419b-910b-1271ffaefd87",
+      "protocolVersion": "0.1",
+      "schemaVersion": "0.1.0",
+      "kind": "entity",
+      "type": "human_statement",
+      "createdAt": "2026-09-10T21:30:00Z",
+      "metadata": {
+        "source": {
+          "kind": "human"
+        },
+        "attestation": "direct",
+        "verification": "not_applicable",
+        "modelReportedConfidence": null,
+        "calibratedInferenceProbability": null,
+        "provenance": {
+          "protocolSourceVersion": "0.1",
+          "evidenceRefs": [],
+          "relationRefs": []
+        },
+        "tags": []
+      },
+      "payload": {
+        "content": "I think a small prototype is worth trying.",
+        "modality": "text",
+        "language": "en"
+      }
+    },
+    {
+      "recordId": "471c0eb9-3e35-429a-abd7-5f9a2da4d881",
+      "protocolVersion": "0.1",
+      "schemaVersion": "0.1.0",
+      "kind": "entity",
+      "type": "human_snapshot",
+      "createdAt": "2026-09-10T21:30:00Z",
+      "metadata": {
+        "source": {
+          "kind": "human"
+        },
+        "attestation": "direct",
+        "verification": "not_applicable",
+        "modelReportedConfidence": null,
+        "calibratedInferenceProbability": null,
+        "provenance": {
+          "protocolSourceVersion": "0.1",
+          "evidenceRefs": [],
+          "relationRefs": []
+        },
+        "tags": []
+      },
+      "payload": {
+        "beliefs": [
+          "A prototype may reveal demand quickly."
+        ],
+        "assumptions": [
+          "Prototype cost remains bounded."
+        ],
+        "unknowns": [
+          "Actual user response."
+        ],
+        "reasons": [
+          "Low cost",
+          "Fast feedback"
+        ],
+        "humanConfidence": 0.65,
+        "predictionRefs": []
+      }
+    },
+    {
+      "recordId": "6dcedfdd-7ed2-4175-92e3-9e51831872e5",
+      "protocolVersion": "0.1",
+      "schemaVersion": "0.1.0",
+      "kind": "entity",
+      "type": "human_initial_choice",
+      "createdAt": "2026-09-10T21:30:00Z",
+      "metadata": {
+        "source": {
+          "kind": "human"
+        },
+        "attestation": "direct",
+        "verification": "not_applicable",
+        "modelReportedConfidence": null,
+        "calibratedInferenceProbability": null,
+        "provenance": {
+          "protocolSourceVersion": "0.1",
+          "evidenceRefs": [],
+          "relationRefs": []
+        },
+        "tags": []
+      },
+      "payload": {
+        "choice": "Run a small prototype.",
+        "humanConfidence": 0.65,
+        "optionRef": null
+      }
+    },
+    {
+      "recordId": "128a3a2e-afe1-47e7-80cd-4f7654c7a084",
+      "protocolVersion": "0.1",
+      "schemaVersion": "0.1.0",
+      "kind": "entity",
+      "type": "inferred_framing",
+      "createdAt": "2026-09-10T21:30:00Z",
+      "metadata": {
+        "source": {
+          "kind": "ecom"
+        },
+        "attestation": "derived",
+        "verification": "not_applicable",
+        "modelReportedConfidence": "medium",
+        "calibratedInferenceProbability": null,
+        "provenance": {
+          "protocolSourceVersion": "0.1",
+          "evidenceRefs": [],
+          "relationRefs": []
+        },
+        "tags": []
+      },
+      "payload": {
+        "framingSummary": "The user favors low-cost validation before larger commitment.",
+        "inferredAssumptions": [
+          "Small tests are reversible."
+        ],
+        "inferredPreferences": [
+          "Prefers evidence before scaling."
+        ]
+      }
+    },
+    {
+      "recordId": "2a8d545f-3597-4c7c-9ff9-db539718236b",
+      "protocolVersion": "0.1",
+      "schemaVersion": "0.1.0",
+      "kind": "entity",
+      "type": "proximal_outcome_spec",
+      "createdAt": "2026-09-10T21:30:00Z",
+      "metadata": {
+        "source": {
+          "kind": "ecom"
+        },
+        "attestation": "derived",
+        "verification": "not_applicable",
+        "modelReportedConfidence": "medium",
+        "calibratedInferenceProbability": null,
+        "provenance": {
+          "protocolSourceVersion": "0.1",
+          "evidenceRefs": [],
+          "relationRefs": []
+        },
+        "tags": []
+      },
+      "payload": {
+        "measure": "new_counterexample_generated",
+        "windowMinutes": 10,
+        "criterion": "At least one new counterexample is produced before final decision.",
+        "unit": "count"
+      }
+    },
+    {
+      "recordId": "922fb685-be5b-46ea-84a0-8aec6ca81fb6",
+      "protocolVersion": "0.1",
+      "schemaVersion": "0.1.0",
+      "kind": "event",
+      "type": "intervention_assignment",
+      "createdAt": "2026-09-10T21:30:00Z",
+      "metadata": {
+        "source": {
+          "kind": "ecom"
+        },
+        "attestation": "assigned",
+        "verification": "not_applicable",
+        "modelReportedConfidence": null,
+        "calibratedInferenceProbability": null,
+        "provenance": {
+          "protocolSourceVersion": "0.1",
+          "evidenceRefs": [],
+          "relationRefs": []
+        },
+        "tags": []
+      },
+      "payload": {
+        "decisionPointRef": "5f50c665-c948-4c7f-b5a9-de7ef103aee2",
+        "availability": true,
+        "randomizationProbability": 0.25,
+        "assignedIntervention": "socratic",
+        "eligibilityMaskVersion": "0.1",
+        "userOptedIn": true,
+        "assignmentReason": "Eligible low-risk decision point."
+      },
+      "occurredAt": "2026-09-10T21:30:00Z"
+    },
+    {
+      "recordId": "d4cc2a5e-0bc7-4636-8139-21e310f22191",
+      "protocolVersion": "0.1",
+      "schemaVersion": "0.1.0",
+      "kind": "entity",
+      "type": "ecom_output",
+      "createdAt": "2026-09-10T21:30:00Z",
+      "metadata": {
+        "source": {
+          "kind": "ecom"
+        },
+        "attestation": "system_generated",
+        "verification": "not_applicable",
+        "modelReportedConfidence": null,
+        "calibratedInferenceProbability": null,
+        "provenance": {
+          "protocolSourceVersion": "0.1",
+          "evidenceRefs": [],
+          "relationRefs": []
+        },
+        "tags": []
+      },
+      "payload": {
+        "content": "Before deciding, name one condition under which the prototype would not be worth running.",
+        "outputMode": "socratic",
+        "assignmentRef": "922fb685-be5b-46ea-84a0-8aec6ca81fb6"
+      }
+    },
+    {
+      "recordId": "c6ffee48-6536-4c54-acd1-c8bfc04ba8e4",
+      "protocolVersion": "0.1",
+      "schemaVersion": "0.1.0",
+      "kind": "event",
+      "type": "exposure_presented",
+      "createdAt": "2026-09-10T21:30:00Z",
+      "metadata": {
+        "source": {
+          "kind": "system_log"
+        },
+        "attestation": "system_generated",
+        "verification": "not_applicable",
+        "modelReportedConfidence": null,
+        "calibratedInferenceProbability": null,
+        "provenance": {
+          "protocolSourceVersion": "0.1",
+          "evidenceRefs": [],
+          "relationRefs": []
+        },
+        "tags": []
+      },
+      "payload": {
+        "outputRef": "d4cc2a5e-0bc7-4636-8139-21e310f22191",
+        "channel": "chat"
+      },
+      "occurredAt": "2026-09-10T21:30:00Z"
+    },
+    {
+      "recordId": "a299fb86-7550-4d6c-96dd-aaea5ad81b2f",
+      "protocolVersion": "0.1",
+      "schemaVersion": "0.1.0",
+      "kind": "event",
+      "type": "exposure_accessed",
+      "createdAt": "2026-09-10T21:30:00Z",
+      "metadata": {
+        "source": {
+          "kind": "system_log"
+        },
+        "attestation": "observed",
+        "verification": "not_applicable",
+        "modelReportedConfidence": null,
+        "calibratedInferenceProbability": null,
+        "provenance": {
+          "protocolSourceVersion": "0.1",
+          "evidenceRefs": [],
+          "relationRefs": []
+        },
+        "tags": []
+      },
+      "payload": {
+        "outputRef": "d4cc2a5e-0bc7-4636-8139-21e310f22191",
+        "accessSignal": "visible",
+        "durationMs": 18000
+      },
+      "occurredAt": "2026-09-10T21:30:00Z"
+    },
+    {
+      "recordId": "2ce0d446-f8a5-4403-8853-754583e3c051",
+      "protocolVersion": "0.1",
+      "schemaVersion": "0.1.0",
+      "kind": "entity",
+      "type": "final_decision",
+      "createdAt": "2026-09-10T21:30:00Z",
+      "metadata": {
+        "source": {
+          "kind": "human"
+        },
+        "attestation": "direct",
+        "verification": "not_applicable",
+        "modelReportedConfidence": null,
+        "calibratedInferenceProbability": null,
+        "provenance": {
+          "protocolSourceVersion": "0.1",
+          "evidenceRefs": [],
+          "relationRefs": []
+        },
+        "tags": []
+      },
+      "payload": {
+        "choice": "Run the prototype with a fixed time and cost cap.",
+        "humanConfidence": 0.75,
+        "optionRef": null
+      }
+    },
+    {
+      "recordId": "e1e95990-1c2d-49a1-a13a-121e998fd7e2",
+      "protocolVersion": "0.1",
+      "schemaVersion": "0.1.0",
+      "kind": "entity",
+      "type": "outcome_proposal",
+      "createdAt": "2026-09-10T21:30:00Z",
+      "metadata": {
+        "source": {
+          "kind": "ecom"
+        },
+        "attestation": "derived",
+        "verification": "not_applicable",
+        "modelReportedConfidence": "medium",
+        "calibratedInferenceProbability": null,
+        "provenance": {
+          "protocolSourceVersion": "0.1",
+          "evidenceRefs": [],
+          "relationRefs": []
+        },
+        "tags": []
+      },
+      "payload": {
+        "criteria": [
+          {
+            "name": "prototype_learning",
+            "successRule": "At least 5 target users provide interpretable feedback.",
+            "measure": "qualified_feedback_count",
+            "threshold": 5,
+            "unit": "users"
+          }
+        ],
+        "evaluationAt": "2026-09-24T18:00:00Z",
+        "notes": "Example criterion proposal."
+      }
+    },
+    {
+      "recordId": "6d2af864-4b52-4fc2-8fd0-9bd2f55a49ec",
+      "protocolVersion": "0.1",
+      "schemaVersion": "0.1.0",
+      "kind": "entity",
+      "type": "outcome_commitment",
+      "createdAt": "2026-09-10T21:30:00Z",
+      "metadata": {
+        "source": {
+          "kind": "human"
+        },
+        "attestation": "direct",
+        "verification": "not_applicable",
+        "modelReportedConfidence": null,
+        "calibratedInferenceProbability": null,
+        "provenance": {
+          "protocolSourceVersion": "0.1",
+          "evidenceRefs": [],
+          "relationRefs": []
+        },
+        "tags": []
+      },
+      "payload": {
+        "proposalRef": "e1e95990-1c2d-49a1-a13a-121e998fd7e2",
+        "criteria": [
+          {
+            "name": "prototype_learning",
+            "successRule": "At least 5 target users provide interpretable feedback.",
+            "measure": "qualified_feedback_count",
+            "threshold": 5,
+            "unit": "users"
+          }
+        ],
+        "evaluationAt": "2026-09-24T18:00:00Z",
+        "committedAt": "2026-09-10T21:35:00Z"
+      }
+    },
+    {
+      "recordId": "e40a9ac1-ca47-495c-b0ea-156048e79edc",
+      "protocolVersion": "0.1",
+      "schemaVersion": "0.1.0",
+      "kind": "activity",
+      "type": "execution_activity",
+      "createdAt": "2026-09-10T21:30:00Z",
+      "metadata": {
+        "source": {
+          "kind": "human"
+        },
+        "attestation": "direct",
+        "verification": "not_applicable",
+        "modelReportedConfidence": null,
+        "calibratedInferenceProbability": null,
+        "provenance": {
+          "protocolSourceVersion": "0.1",
+          "evidenceRefs": [],
+          "relationRefs": []
+        },
+        "tags": []
+      },
+      "payload": {
+        "decisionRef": "2ce0d446-f8a5-4403-8853-754583e3c051",
+        "status": "started",
+        "startedAt": "2026-09-11T08:00:00Z",
+        "endedAt": null,
+        "description": "Build and test the bounded prototype."
+      }
+    },
+    {
+      "recordId": "b9fa588e-1867-4501-af3f-fe616ce07934",
+      "protocolVersion": "0.1",
+      "schemaVersion": "0.1.0",
+      "kind": "relation",
+      "type": "provenance_relation",
+      "createdAt": "2026-09-10T21:30:00Z",
+      "metadata": {
+        "source": {
+          "kind": "system_log"
+        },
+        "attestation": "system_generated",
+        "verification": "not_applicable",
+        "modelReportedConfidence": null,
+        "calibratedInferenceProbability": null,
+        "provenance": {
+          "protocolSourceVersion": "0.1",
+          "evidenceRefs": [],
+          "relationRefs": []
+        },
+        "tags": []
+      },
+      "payload": {
+        "subjectRef": "128a3a2e-afe1-47e7-80cd-4f7654c7a084",
+        "subjectKind": "entity",
+        "predicate": "prov:wasDerivedFrom",
+        "objectRef": "742947a6-bc1b-419b-910b-1271ffaefd87",
+        "objectKind": "entity"
+      }
+    },
+    {
+      "recordId": "2d6700fb-ad81-4d33-b7a5-13b3681e94d8",
+      "protocolVersion": "0.1",
+      "schemaVersion": "0.1.0",
+      "kind": "entity",
+      "type": "human_confirmation",
+      "createdAt": "2026-09-10T21:40:00Z",
+      "metadata": {
+        "source": {
+          "kind": "human"
+        },
+        "attestation": "direct",
+        "verification": "not_applicable",
+        "modelReportedConfidence": null,
+        "calibratedInferenceProbability": null,
+        "provenance": {
+          "protocolSourceVersion": "0.1",
+          "evidenceRefs": [],
+          "relationRefs": []
+        },
+        "tags": []
+      },
+      "payload": {
+        "targetRef": "128a3a2e-afe1-47e7-80cd-4f7654c7a084",
+        "confirmationText": "Yes, that framing matches my current view.",
+        "scope": "current decision only"
+      }
+    },
+    {
+      "recordId": "739a5284-c109-41ad-aba5-63a89998a13b",
+      "protocolVersion": "0.1",
+      "schemaVersion": "0.1.0",
+      "kind": "activity",
+      "type": "confirmation_activity",
+      "createdAt": "2026-09-10T21:40:00Z",
+      "metadata": {
+        "source": {
+          "kind": "human"
+        },
+        "attestation": "direct",
+        "verification": "not_applicable",
+        "modelReportedConfidence": null,
+        "calibratedInferenceProbability": null,
+        "provenance": {
+          "protocolSourceVersion": "0.1",
+          "evidenceRefs": [],
+          "relationRefs": []
+        },
+        "tags": []
+      },
+      "payload": {
+        "usedRef": "128a3a2e-afe1-47e7-80cd-4f7654c7a084",
+        "generatedRef": "2d6700fb-ad81-4d33-b7a5-13b3681e94d8",
+        "humanAgentRef": "827129ca-1025-4ded-9192-f3bd42e005b6",
+        "startedAt": "2026-09-10T21:40:00Z",
+        "endedAt": "2026-09-10T21:40:00Z"
+      }
+    },
+    {
+      "recordId": "4b04b311-eb7a-48de-b202-a5c16f4ce248",
+      "protocolVersion": "0.1",
+      "schemaVersion": "0.1.0",
+      "kind": "relation",
+      "type": "provenance_relation",
+      "createdAt": "2026-09-10T21:40:00Z",
+      "metadata": {
+        "source": {
+          "kind": "system_log"
+        },
+        "attestation": "system_generated",
+        "verification": "not_applicable",
+        "modelReportedConfidence": null,
+        "calibratedInferenceProbability": null,
+        "provenance": {
+          "protocolSourceVersion": "0.1",
+          "evidenceRefs": [],
+          "relationRefs": []
+        },
+        "tags": []
+      },
+      "payload": {
+        "subjectRef": "2d6700fb-ad81-4d33-b7a5-13b3681e94d8",
+        "subjectKind": "entity",
+        "predicate": "prov:wasGeneratedBy",
+        "objectRef": "739a5284-c109-41ad-aba5-63a89998a13b",
+        "objectKind": "activity"
+      }
+    },
+    {
+      "recordId": "243a04eb-ff16-4a75-9f0b-ee9ac382ee82",
+      "protocolVersion": "0.1",
+      "schemaVersion": "0.1.0",
+      "kind": "relation",
+      "type": "provenance_relation",
+      "createdAt": "2026-09-10T21:40:00Z",
+      "metadata": {
+        "source": {
+          "kind": "system_log"
+        },
+        "attestation": "system_generated",
+        "verification": "not_applicable",
+        "modelReportedConfidence": null,
+        "calibratedInferenceProbability": null,
+        "provenance": {
+          "protocolSourceVersion": "0.1",
+          "evidenceRefs": [],
+          "relationRefs": []
+        },
+        "tags": []
+      },
+      "payload": {
+        "subjectRef": "739a5284-c109-41ad-aba5-63a89998a13b",
+        "subjectKind": "activity",
+        "predicate": "prov:wasAssociatedWith",
+        "objectRef": "827129ca-1025-4ded-9192-f3bd42e005b6",
+        "objectKind": "agent"
+      }
+    },
+    {
+      "recordId": "770f5ac2-ea73-4dc8-abd3-971a177e0254",
+      "protocolVersion": "0.1",
+      "schemaVersion": "0.1.0",
+      "kind": "relation",
+      "type": "provenance_relation",
+      "createdAt": "2026-09-10T21:40:00Z",
+      "metadata": {
+        "source": {
+          "kind": "system_log"
+        },
+        "attestation": "system_generated",
+        "verification": "not_applicable",
+        "modelReportedConfidence": null,
+        "calibratedInferenceProbability": null,
+        "provenance": {
+          "protocolSourceVersion": "0.1",
+          "evidenceRefs": [],
+          "relationRefs": []
+        },
+        "tags": []
+      },
+      "payload": {
+        "subjectRef": "739a5284-c109-41ad-aba5-63a89998a13b",
+        "subjectKind": "activity",
+        "predicate": "prov:used",
+        "objectRef": "128a3a2e-afe1-47e7-80cd-4f7654c7a084",
+        "objectKind": "entity"
+      }
+    },
+    {
+      "recordId": "dd93f50e-b2b6-4168-a4ca-1f69404a6a72",
+      "protocolVersion": "0.1",
+      "schemaVersion": "0.1.0",
+      "kind": "relation",
+      "type": "provenance_relation",
+      "createdAt": "2026-09-10T21:40:00Z",
+      "metadata": {
+        "source": {
+          "kind": "system_log"
+        },
+        "attestation": "system_generated",
+        "verification": "not_applicable",
+        "modelReportedConfidence": null,
+        "calibratedInferenceProbability": null,
+        "provenance": {
+          "protocolSourceVersion": "0.1",
+          "evidenceRefs": [],
+          "relationRefs": []
+        },
+        "tags": []
+      },
+      "payload": {
+        "subjectRef": "2d6700fb-ad81-4d33-b7a5-13b3681e94d8",
+        "subjectKind": "entity",
+        "predicate": "ecom:confirmedBy",
+        "objectRef": "128a3a2e-afe1-47e7-80cd-4f7654c7a084",
+        "objectKind": "entity"
+      }
+    }
+  ]
+}

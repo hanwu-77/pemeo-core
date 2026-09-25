@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=83,<84", "wheel>=0.46.2,<0.47"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ecom-backend-core"
+version = "0.1.1"
+description = "ECOM Protocol v0.1 backend validation and append-only storage core"
+requires-python = ">=3.11"
+license = "Apache-2.0"
+license-files = ["LICENSE", "NOTICE"]
+dependencies = [
+  "jsonschema>=4.23,<5",
+  "pydantic>=2.9,<3",
+  "SQLAlchemy>=2.0,<3",
+  "psycopg[binary]>=3.2,<4",
+  "rfc8785==0.1.4",
+  "webauthn==3.0.0",
+]
+
+[project.optional-dependencies]
+test = ["pytest>=9.0.3,<10"]
+
+[project.scripts]
+ecom-validate = "ecom_backend.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

@@ -1,0 +1,10 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>PeMeO · 确认</title><link rel="stylesheet" href="/style.css"><script src="/app.js" defer></script></head><body><main>
+<header><span class="brand">PeMeO</span><span class="tag">本机身份验证 · I2</span></header>
+<h1>由你确认，原文保留</h1><p class="intro">用已登记的凭据确认一次表达。确认动作会留下回执，内容不会因此被认定为客观事实。</p>
+<p id="status" role="status" aria-live="polite">正在连接本机服务…</p>
+<section id="welcome"><h2>开始</h2><p>首次使用需填入本机安装凭据。它只用于登记，不能代替你的确认。</p><label>一次性安装凭据<input id="bootstrap" type="password" autocomplete="off" maxlength="64"></label><p class="note">认证器可能由系统或密码管理器同步。PeMeO 不会替你开启同步；请自行选择可接受的凭据保存方式。这里只处理合成测试内容。</p><div class="actions"><button id="register">登记凭据</button><button id="login" class="secondary">使用已登记凭据登录</button></div></section>
+<section id="workspace" hidden><h2>准备一条确认</h2><label>原始表达<textarea id="statement" maxlength="4000">这是一条用于验证 PeMeO 确认流程的合成表达。</textarea></label><label>确认文字<textarea id="confirmation" maxlength="4000">我确认这是我在本次测试中提交的表达。</textarea></label><button id="prepare">保存表达并准备候选</button><p class="note">表达在登录会话下保存；下面的确认仍需你针对本次候选重新操作认证器。</p></section>
+<section id="candidate" hidden><h2>请查看待确认内容</h2><p>这次确认针对的已保存表达：</p><p id="target-text"></p><p>你的确认文字：</p><p id="candidate-text"></p><details><summary>完整候选、来源与摘要</summary><pre id="candidate-json"></pre><p class="digest" id="candidate-digest"></p></details><p class="note">批准不会修改这份内容。请使用当前登录凭据完成验证。</p><div class="actions"><button id="approve">确认此内容</button><button id="reject" class="secondary">放弃此候选</button></div></section>
+<section id="receipt" hidden><h2>本次回执</h2><p id="receipt-status"></p><pre id="receipt-json"></pre></section>
+<section id="credentials" hidden><h2>我的凭据</h2><div id="credential-list"></div><button id="add" class="secondary">使用现有凭据验证后，增补凭据</button><p class="note">增补或撤销后需要重新登录。撤销最后一个凭据后将无法写入；本版没有恢复入口。</p><button id="logout" class="quiet">退出登录</button></section>
+<footer>记录不被静默改写 · 私钥与生物特征不交给 PeMeO</footer></main></body></html>

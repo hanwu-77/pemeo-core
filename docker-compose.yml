@@ -1,0 +1,29 @@
+name: pemeo-core-test
+services:
+  postgres:
+    image: postgres@sha256:cf78e76683b9ca8c5733cbbdce6c9262b45b6767934dd0a95e671f9a0fc20685
+    container_name: pemeo-core-test-postgres
+    environment:
+      POSTGRES_DB: pemeo_core_test
+      POSTGRES_USER: pemeo_core_test
+      POSTGRES_PASSWORD: ${PEMEO_CORE_TEST_PASSWORD:?generate a project-local .env first}
+    ports:
+      - "127.0.0.1::5432"
+    volumes:
+      - test-data:/var/lib/postgresql/data
+      - ./sql/001_init.sql:/docker-entrypoint-initdb.d/001_init.sql:ro
+    networks: [test]
+    mem_limit: 512m
+    cpus: 1.0
+    restart: "no"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U pemeo_core_test -d pemeo_core_test"]
+      interval: 2s
+      timeout: 3s
+      retries: 20
+networks:
+  test:
+    name: pemeo-core-test-network
+volumes:
+  test-data:
+    name: pemeo-core-test-data

@@ -1,0 +1,102 @@
+{
+  "title": "Language selection data derived from OBDILCI ResultsV6.xlsx",
+  "attribution": "Observatory of Linguistic and Cultural Diversity in the Internet (OBDILCI)",
+  "license": "CC-BY-SA-4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "source_url": "https://www.obdilci.org/wp-content/uploads/2025/07/ResultsV6.xlsx",
+  "source_page": "https://www.obdilci.org/projects/main/",
+  "source_date": "2025-07",
+  "retrieved_at": "2026-09-22T04:16:24.111727+00:00",
+  "source_sha256": "e4c1a00974bb53f02c1d8c450af4478913b41d71bcd050f9655f5be4bf6355ef",
+  "changes": "Selected first 11 named language groups after sorting cached RESULTS column D descending. Rounded language-linked speaker estimates to 0.1 million using Q5; excluded a00 REST aggregate. Not unique-person counts across languages. No formulas recalculated.",
+  "top_groups": [
+    {
+      "iso": "zho",
+      "name": "Chinese Macro",
+      "share": 0.1756717363706684,
+      "cell": "D346",
+      "rank": 1,
+      "estimated_connected_speakers_millions": 1214.7
+    },
+    {
+      "iso": "eng",
+      "name": "English",
+      "share": 0.1548366782133318,
+      "cell": "D93",
+      "rank": 2,
+      "estimated_connected_speakers_millions": 1070.6
+    },
+    {
+      "iso": "spa",
+      "name": "Spanish",
+      "share": 0.06627771145238838,
+      "cell": "D287",
+      "rank": 3,
+      "estimated_connected_speakers_millions": 458.3
+    },
+    {
+      "iso": "ara",
+      "name": "Arabic Macro",
+      "share": 0.04355783431658561,
+      "cell": "D35",
+      "rank": 4,
+      "estimated_connected_speakers_millions": 301.2
+    },
+    {
+      "iso": "hin",
+      "name": "Hindi",
+      "share": 0.042691980581534665,
+      "cell": "D127",
+      "rank": 5,
+      "estimated_connected_speakers_millions": 295.2
+    },
+    {
+      "iso": "rus",
+      "name": "Russian",
+      "share": 0.033070490958303514,
+      "cell": "D264",
+      "rank": 6,
+      "estimated_connected_speakers_millions": 228.7
+    },
+    {
+      "iso": "fra",
+      "name": "French",
+      "share": 0.0305289669585414,
+      "cell": "D100",
+      "rank": 7,
+      "estimated_connected_speakers_millions": 211.1
+    },
+    {
+      "iso": "por",
+      "name": "Portuguese",
+      "share": 0.02967151249099338,
+      "cell": "D253",
+      "rank": 8,
+      "estimated_connected_speakers_millions": 205.2
+    },
+    {
+      "iso": "msa",
+      "name": "Malay Macro",
+      "share": 0.02545458919298276,
+      "cell": "D219",
+      "rank": 9,
+      "estimated_connected_speakers_millions": 176.0
+    },
+    {
+      "iso": "ben",
+      "name": "Bengali",
+      "share": 0.018954446791345503,
+      "cell": "D51",
+      "rank": 10,
+      "estimated_connected_speakers_millions": 131.1
+    },
+    {
+      "iso": "deu",
+      "name": "German, Standard",
+      "share": 0.0180108161591251,
+      "cell": "D85",
+      "rank": 11,
+      "estimated_connected_speakers_millions": 124.5
+    }
+  ]
+}

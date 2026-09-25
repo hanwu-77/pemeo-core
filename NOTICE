@@ -1,0 +1,9 @@
+PeMeO Core
+
+Project-authored material in this source distribution is prepared under the
+Apache License, Version 2.0. Third-party material retains its own notices and
+licenses; see THIRD_PARTY_NOTICES.md and third_party/licenses/.
+
+Historical ECOM protocol, module and database identifiers are retained for
+compatibility. This notice grants no trademark rights and does not imply
+endorsement by any dependency author or by the Apache Software Foundation.
